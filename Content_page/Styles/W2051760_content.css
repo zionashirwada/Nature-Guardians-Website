@@ -42,6 +42,9 @@ header img {
     height: auto; 
     border-radius: 0px; 
   }  
+  #hero-image img:hover{
+    rotate: 3deg;
+  }
   #hero-text{
     
     padding-left: 20%;
@@ -56,6 +59,7 @@ header img {
     font-weight: 700; 
     line-height: 74px; 
     color: #323842FF; /* neutral-700 */
+    padding: 0;
   }
 
 #hero-text p{
@@ -224,7 +228,7 @@ header img {
 .card{
   
     flex: 1;
-    margin: 100px;
+    margin: 80px;
     margin-top: 0;
     margin-bottom: 50px;
     
@@ -232,3 +236,124 @@ header img {
     background: #FFFFFFFF; /* white */
     border-radius: 6px; /* border-m */
     box-shadow: 0px 0px 5px #c9cdd1 ; }
+  .card:hover{
+    box-shadow: 0px 0px 5px #04543DFF; /* primary-500 */
+  }
+
+.card img{
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.card h2{
+ position: relative;
+ left: 5%;
+  font-family: Vollkorn; /* Heading */
+  font-size: 22px; 
+  font-weight: 700; 
+  line-height: 30px; 
+  color: #323842FF; /* neutral-700 */
+}
+
+.card li{
+  position: relative;
+ right: 3%;
+  
+  height: 32px; 
+  font-family: Encode Sans; /* Body */
+  font-size: 14px; 
+  font-weight: 400; 
+  line-height: 26px; 
+  color: #9095A0FF; /* neutral-500 */
+  margin-bottom: 20px;
+}
+#quote{
+  padding: 250px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  
+  
+ 
+}
+#quote-box{
+  background: #F6FCE8FF;
+  
+}
+#quote-container{display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+  .quote{ 
+    margin-bottom: 3%;
+    width: 1160px; 
+    height: 407px; 
+       border-radius: 12px; 
+    display: flex;}
+
+    .quote img{
+      position: relative;
+      width: auto;
+      max-height: 100%;
+    }
+  #speach{ 
+    width: 600px; 
+    height: 192px; 
+    font-family: Encode Sans; /* Body */
+    font-size: 32px; 
+    font-weight: 400; 
+    line-height: 48px; 
+    color: #323842FF;}
+  #speaker{
+    width: 500px; 
+    font-family: Encode Sans; /* Body */
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 26px; 
+    color: #323842FF;
+    
+  }
+  #quote-text{
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 600px;
+  }
+  #reason{
+    
+    padding: 250px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    
+    
+   
+  }
+  #table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  table{border-collapse: separate; 
+    border-spacing: 50px; 
+  width: 100%;
+padding: 5%;
+padding-top: 0;}
+  td{ 
+    font-family: Vollkorn; /* Heading */
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 36px; 
+    color: #323842FF; /* neutral-700 */
+      border-bottom: 1px solid #BCC1CAFF;
+      
+      gap: 10px;
+     
+      
+      flex: 1;
+    
+        padding: 12px; /* Increased padding for more space */
+        text-align: left;
+        width: 33.33%; /* Divide by the number of columns */
+        line-height: 1.5; /
+  }
+ 
