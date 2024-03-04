@@ -4,7 +4,7 @@
 
 .left {
     flex: 3;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .right {
@@ -25,7 +25,7 @@
 
 
 .content {
-    height: 1500px; /* Just for visualization of scrolling */
+    height: 100%; /* Just for visualization of scrolling */
 }
 
 
@@ -176,7 +176,7 @@ flex: 1;
         padding-top: 0;
         color: #171A1FFF; }
     #basket-footer{
-        padding: 20px;
+        padding: 15px;
         padding-top: 0;
         padding-bottom: 0;
         display: flex;
@@ -217,12 +217,12 @@ flex: 1;
         left: 95px; 
     }
 #value{ font-family: Vollkorn; /* Heading */
-    font-size: 20px; 
+    font-size: 24px; 
     font-weight: 700; 
     line-height: 30px; 
     color: #171A1FFF; }
     #total { font-family: Encode Sans; /* Body */
-        font-size: 14px; 
+        font-size: 18px; 
         font-weight: 400; 
         line-height: 22px; 
         color: #171A1FFF; }
@@ -230,3 +230,126 @@ flex: 1;
             padding-top: 20px;
 
         }
+        #filter_container{
+            display: flex;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .filter_img {
+            flex: 1;
+            padding: 80px;
+            width: 100%;
+            align-items: center;
+            align-self: center;
+            text-align: center;
+            
+        }
+        .filter_img img{
+            width: 100%;
+            height: auto;
+         
+            
+        }
+        .filter_img h5{
+            font-family: Encode Sans; /* Body */
+  font-size: 14px; 
+  font-weight: 400; 
+  line-height: 22px; 
+  color: #9095A0FF;
+        }
+        .filter_img h3{
+            font-family: Vollkorn; /* Heading */
+            font-size: 30px; 
+            font-weight: 500; 
+            line-height: 36px; 
+            color: #171A1FFF;
+        }
+        .item_list {
+            display: flex;
+            padding-left: 200px;
+            padding-right: 200px;
+            
+        }
+
+        .card {
+            flex: 1;
+            
+            border-radius: 20px;
+            background: #f5f5f5;
+            position: relative;
+            padding: 1.8rem;
+            border: 2px solid #c3c6ce;
+            transition: 0.5s ease-out;
+            overflow: visible;
+            margin: 30px;
+            margin-top: 0;
+           }
+           
+           .card-details {
+            color: black;
+            height: 100%;
+            gap: .5em;
+            display: grid;
+            place-content: center;
+           }
+           
+           .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #034633;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+           }
+           
+           
+           
+           .card:hover {
+            border-color: #034633;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+           }
+           
+           .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+           }
+
+           .card-details .item_img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            
+           }
+           .category_type h3{font-family: Vollkorn; /* Heading */
+            font-size: 32px; 
+            font-weight: 700; 
+            line-height: 48px; 
+            color: #171A1FFF;
+        padding-left: 200px;}
+        .item_title{ font-family: Vollkorn; /* Heading */
+            font-size: 25px; 
+            font-weight: 700; 
+            line-height: 30px; 
+            color: #171A1FFF;
+        padding: 0;
+        
+    margin: 0;
+    margin-top: 25px;}
+            .price{font-family: Encode Sans; /* Body */
+                font-size: 20px; 
+                font-weight: 700; 
+                line-height: 26px; 
+                color: #04543DFF;
+                padding: 0;
+                margin: 0;}
+
+                .rating_img{
+                    width: 50%;
+                }
