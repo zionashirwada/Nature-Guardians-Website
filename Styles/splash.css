@@ -1,0 +1,136 @@
+#content{
+    
+    display: flex;
+}
+#welcome{
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+    text-align: center;
+}
+#gif{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#gif img{
+    width: 100%;
+    height: auto;
+}
+#logo{
+    height: 100px;
+    padding: 5%;
+}
+h1{
+    font-family: Vollkorn; /* Heading */
+    font-size: 50px; 
+    font-weight: 700; 
+    line-height: 48px; 
+    color: #171A1FFF;
+}
+#mission{font-family: Encode Sans; /* Body */
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 28px; 
+    color: #9095A0FF; 
+padding-left: 10%;
+padding-right: 10%;}
+
+#students{
+    display: flex;
+    
+
+    padding: 5%;
+}
+.student-card {
+    background: #fff;
+    width: 10rem;
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #0f6c3c;
+    box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .student-card h2 {
+    margin-bottom: 15px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  
+  .student-card h2 span {
+    display: block;
+    margin-top: -4px;
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .Student-num {
+    position: relative;
+    background: #bbf7d7;
+    width: 10rem;
+    margin-left: 0.35rem;
+    padding: .2rem 1.2rem;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .Student-num p {
+    margin: 0;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+   
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Vollkorn;
+  }
+  
+ 
+  .Student-num div {
+    position: absolute;
+    bottom: -23px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #22c570;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid transparent;
+    z-index: -6;
+  }
+  
+  .id-list {
+    margin-top: 16px;
+  }
+  
+  .id-list ul {
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .id-list ul li {
+    color: #4d4d4d;
+    list-style: none;
+    margin-bottom: .2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  
+  .id-list ul li svg {
+    width: .9rem;
+    fill: currentColor;
+  }
+  
+  .id-list ul li span {
+    font-weight: 300;
+  }
+  
