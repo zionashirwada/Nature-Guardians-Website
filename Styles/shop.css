@@ -140,7 +140,7 @@ flex: 1;
     
   }
   #basket-items{
-    padding-top: 40px;
+    padding-top: 0;
   }
   .basket-item{
     display: flex;
@@ -149,6 +149,7 @@ flex: 1;
     padding-top: 15px;
     justify-content: space-between;
     align-items: center;
+    border-bottom: #e7eeeb 1px solid;
   }
   .item-image img{
     flex: 1;
@@ -467,3 +468,15 @@ flex: 1;
                         background: #00000000; /* transparent */
                       }
                        
+
+                      #error-message p{
+                        display: fixed;
+                        background-color: #fce8db;
+                        margin: 10px;
+
+                        padding:5px;
+                        text-align: center;
+                        border-radius: 1rem;
+                        color: #ef665b;
+                        border: #ef665b 1px solid;
+                      }
