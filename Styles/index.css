@@ -1,4 +1,8 @@
-.students-summary-container {
+
+body{
+  position: relative;
+  text-align: center;
+}.students-summary-container {
     font-family: "Hanken Grotesk", sans-serif;
     display: flex;
     width: 550px;
@@ -167,4 +171,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
+  #title{font-family: Vollkorn; /* Heading */
+    font-size: 32px; 
+    font-weight: 700; 
+    line-height: 48px; 
+    color: #171A1FFF; }
