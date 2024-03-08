@@ -480,3 +480,59 @@ flex: 1;
                         color: #ef665b;
                         border: #ef665b 1px solid;
                       }
+                      .error-icon path {
+                        fill: #f87171;
+                      }
+                      .popup-icon{
+                        margin: 5px;
+                        display: flex;
+                        align-items: center;
+                        width: 1.25rem;
+  height: 1.25rem;
+
+                      }
+
+                      .radio-inputs {
+                        position: relative;
+                        display: flex;
+                        flex-wrap: wrap;
+                        border-radius: 0.5rem;
+                        background-color: #EEE;
+                        box-sizing: border-box;
+                        box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+                        padding: 0.25rem;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        
+                        width: 100%;
+                        font-size: 14px;
+                      }
+                      
+                      .radio-inputs .radio {
+                        flex: 1 1 auto;
+                        text-align: center;
+                        
+                      }
+                      
+                      .radio-inputs .radio input {
+                        display: none;
+                        
+                      }
+                      
+                      .radio-inputs .radio .name {
+                        display: flex;
+                        cursor: pointer;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 0.5rem;
+                        border: none;
+                        padding: .5rem 0;
+                        color: rgba(51, 65, 85, 1);
+                        transition: all .15s ease-in-out;
+                      }
+                      
+                      .radio-inputs .radio input:checked + .name {
+                        background-color: #034633;
+                        color: #ffffff;
+                        font-weight: 600;
+                      }

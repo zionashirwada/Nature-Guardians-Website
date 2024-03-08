@@ -67,12 +67,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const clearButton = document.getElementById('clear');
     const errorMessage = document.getElementById('error-message');
+    
     let total = 0;
     let itemCount = 0;
     
 
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function() {
+
+            //error messege if 5 items exceeded
             if (itemCount >= 5) {
                 errorMessage.innerHTML = `<p>Maximum of 5 items are allowed in one order</p>`;
                 return;
@@ -80,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const card = this.closest('.card');
             const itemImage = card.querySelector('.item_img').src;
             const itemName = card.querySelector('.item_title').textContent;
+            const selectedSize = card.querySelector('input[class="radio"]:checked').value;
             // Convert the price string to a number by removing the '£' sign and parsing it
             const itemPrice = parseFloat(card.querySelector('.price').textContent.replace('£', ''));
             itemCount++;
@@ -92,7 +96,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <div class="item-details">
                     <h3>${itemName}</h3>
-                    <p>Price: £${itemPrice.toFixed(2)}</p>
+                    <p>Size: ${selectedSize} &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Price: £${itemPrice.toFixed(2)}</p>
+                    
                 </div>
                 
             `;
