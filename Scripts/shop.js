@@ -5,6 +5,7 @@ const colors = ['#C9E78A', '#F7DC6F', '#85C1E9'];
 const secondcolors = ['#086b45', '#d17d0e', '#304f73'];
 const titles = ['Monkey print T-shirt', 'Tiger print T-shirt', 'Elephant print T-shirt'];
 let currentIndex = 0;
+var CalculatedGrandTotal;
 
 function updateImageAndColor() {
     document.getElementById('timage').src = images[currentIndex];
@@ -28,6 +29,52 @@ function nextImage() {
     updateImageAndColor();
     document.getElementById('banner_img');
     
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const submitButton = document.getElementById('submit-button');
+    const myForm = document.getElementById('detail-form');
+    
+    myForm.addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        
+        // Check if the form is valid
+        if (myForm.checkValidity()) {
+            const checkoutSection = document.getElementById('checkout');
+            const successSection = document.getElementById('checkout-success');
+        checkoutSection.style.display = 'none';
+        successSection.style.display = 'flex';
+                    console.log('Form is valid! Proceeding with custom function...');
+        } else {
+            // If the form is not valid, display an error message or handle it accordingly
+            console.log('Form is not valid. Please fill out all required fields.');
+        }
+    });
+    
+});
+
+function validateForm() {
+    var requiredFields = document.querySelectorAll('input[required]');
+    for (var i = 0; i < requiredFields.length; i++) {
+      if (requiredFields[i].value.trim() === '') {
+        alert('Please fill in all required fields.');
+        return false; // Prevent form submission
+      }
+    }
+    successbuttonaction()
+ 
+    return true; // Allow form submission
+  }
+
+
+function successbuttonaction(){
+    const checkoutSection = document.getElementById('checkout');
+    const successSection = document.getElementById('checkout-success');
+checkoutSection.style.display = 'none';
+successSection.style.display = 'flex';
+
+
 }
 
 
@@ -58,6 +105,48 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+
+// Function to updateCheckout section
+function updateCheckout(itemImage, itemName, itemSize, itemPrice,total) {
+    const table = document.querySelector('#summery-table tbody');
+    
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td><img class="itemimage" src="${itemImage}"></td>
+        <td><p class="table-itemname col2">${itemName}</p></td>
+        <td><p class="table-customize col3">${itemSize}</p></td>
+        <td><p class="table-price col4">£${itemPrice.toFixed(2)}</p></td>
+    `;
+    
+    table.appendChild(row);
+
+    const CheckoutSubtotal = document.getElementById('subtotal');
+    CheckoutSubtotal.innerHTML = `
+    £ ${total.toFixed(2)}
+            `;
+            
+            var discount = ((total/100)*15)
+            var grandtotal = (total - discount) + 22;
+            CalculatedGrandTotal = grandtotal;
+            
+
+            const CheckoutDiscount = document.getElementById('discount');
+            CheckoutDiscount.innerHTML = `
+            - £ ${discount.toFixed(2)}
+            `;
+            const CheckoutGrandtotal = document.getElementById('grandtotal');
+            CheckoutGrandtotal.innerHTML = `
+            £ ${grandtotal.toFixed(2)}
+            `;
+
+}
+
+
+
+
 
 
 /// add to basket
@@ -102,6 +191,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 
             `;
             
+            
+       // Update the table
+       updateCheckout(itemImage, itemName, selectedSize, itemPrice,total);
+
+
            //append total at botom
             basketItemsContainer.appendChild(basketItem);
             const basketTotalContainer = document.getElementById('basket-total');
@@ -119,11 +213,44 @@ document.addEventListener("DOMContentLoaded", function() {
             const basketTotalContainer = document.getElementById('basket-total');
             basketTotalContainer.innerHTML = '';
             errorMessage.innerHTML = ``;
+            const table = document.querySelector('#summery-table tbody');
+            table.innerHTML=` <tr>
+            <th class="col1"></th>
+            <th  class="col2">Name</th>
+            <th class="col3">Customization</th>
+            <th class="col4">Price</th>
+          </tr> `;
+
+
             // Reset total to zero
             total = 0;
             itemCount=0;
+
+
+            //checkout button 
+            
             
         });
+
+        //checkout button onclick
+        const checkoutButton = document.getElementById('checkout-button');
+         const shopSection = document.getElementById('shop');
+        const checkoutSection = document.getElementById('checkout');
+    
+    checkoutButton.addEventListener('click', function() {
+        if (itemCount < 1) {
+            errorMessage.innerHTML = `<p>You should have a minimum of 1 item to Checkout</p>`;
+        } else {
+            shopSection.style.display = 'none';
+            checkoutSection.style.display = 'flex';
+        }
+    });
+
+//success button onclick
+
+
+
+
     });
 
    

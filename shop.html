@@ -12,8 +12,8 @@
 
 
 <body>
-    
-    <section id="hero">
+    <section id="shop">
+    <div id="hero">
 <div id="text-container">
     <h1>Shop to Save Species</h1>
     <p>Our store offers sustainable products that support global wildlife conservation. Each purchase funds programs protecting endangered species and fragile ecosystems.</p>
@@ -24,7 +24,7 @@
 <div id="image-container">
     <img src="Images/shop/hero-img.png" alt="Shop to Save Species">
 </div>
-    </section>
+</div>
     <div class="items">
         <div class="left">
             <div class="content">
@@ -468,7 +468,220 @@
            </div> 
         </div>
         </div>
-     
+      </div>
+      </div>
+    </section>
+    <section id="checkout" >
+      
+      <div id="info">
+        <h1>Checkout</h1>
+        <div id="summery">
+          <div class="info-img"> 
+            <img class="itemtitleimage" src="Images/shop/cart.svg" alt="summary">
+            <p>Order summary</p>
+          </div>
+          <div id="summery-table">
+            <table>
+              <tr>
+                <th class="col1"></th>
+                <th  class="col2">Name</th>
+                <th class="col3">Customization</th>
+                <th class="col4">Price</th>
+              </tr>
+          
+            </table>
+          </div>
+         
+        </div>
+        <div id="dilivery">
+          <div class="info-img"> 
+            <img class="itemtitleimage" src="Images/shop/diliver.svg" alt="summary" name="dilivery">
+            <p>Delivery options</p>
+          </div>
+          <div id="dilivery-radio">
+            
+              
+              <div class="radio-inputs">
+                <label>
+                  <input class="radio-input" type="radio" value="amazon" name="dilivery" checked>
+                    <span class="radio-tile">
+                      <span class="radio-icon">
+                        <img src="/Images/shop/amazon.svg" >
+                      </span>
+                     
+                    </span>
+                </label>
+                <label>
+                  <input class="radio-input" type="radio" value="dhl" name="dilivery">
+                    <span class="radio-tile">
+                      <span class="radio-icon">
+                      <img src="/Images/shop/dhl.svg" >
+                    </span>
+                     
+                    </span>
+                </label>
+                <label>
+                  <input checked="" class="radio-input" type="radio" value="fedex" name="dilivery">
+                  <span class="radio-tile">
+                    <span class="radio-icon">
+                      <img src="/Images/shop/fedex.svg" > </span>
+                    
+                  </span>
+                </label>
+                <label>
+                  <input class="radio-input" type="radio" value="ups" name="dilivery">
+                  <span class="radio-tile">
+                    <span class="radio-icon">
+                      <img src="/Images/shop/ups.svg" > </span>
+                    
+                  </span>
+                </label>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div id="details">
+          <div class="info-img"> 
+            <img class="itemtitleimage" src="Images/shop/profile.svg" alt="summary">
+            <p>Order summary</p>
+          
+          </div>
+          <form action="" id="detail-form">
+<div class="input-row">
+  <div class="input-container">
+    <input placeholder="Full name" class="input-field" type="text" required id="username-input">
+    <label for="name" class="input-label">Full name</label>
+    <span class="input-highlight"></span>
+  </div><div class="input-container">
+    <input placeholder="Phone Number" class="input-field" type="text" required id="phone-input">
+    <label for="Phone Number" class="input-label">Phone Number</label>
+    <span class="input-highlight"></span>
+  </div>
+</div>
+          <div class="input-container">
+            <input placeholder="Address" class="input-field" type="text" required id="address-input">
+            <label for="Address" class="input-label">Address</label>
+            <span class="input-highlight"></span>
+          </div>
+          <div id="save-check">
+          <input type="checkbox" id="save" name="save" value="save">
+          <label for="save">Save as default</label>
+        </div>
+        </div>
+      </div>
+      
+
+      
+      <div id="payment">
+        <div class="info-img" style="padding-left: 20px;"> 
+          <img  class="itemtitleimage" src="Images/shop/payment.svg" alt="summary">
+          <p>Order summary</p>
+        </div>
+
+        <div id="card-info">
+          <p>Change payment methods</p>
+          <div id="cc">
+            <img src="/Images/shop/master.png" alt="master">
+            <h3>Master card</h3>
+            <h6>**** **** **** 1234</h6>
+          </div>
+        </div>
+        <div id="voucher-info">
+          <h1>Voucher</h1>
+          <div id="voucher-feild">
+            <input type="text" placeholder="NEWUSER24" id="voucher" name="voucher" disabled>
+            <button id="apply" name="apply">Applied!</button>
+          </div>
+          <button id="voucher-ammount" name="voucher-ammount">15% OFF</button>
+        </div>
+        <div id="amounts">
+          <div class="info-img"> 
+            <img  class="itemtitleimage" src="Images/shop/sum.svg" alt="summary">
+            <p>Order summary</p>
+          </div>
+
+          <div class="amount">
+            <div class="amount-name">
+              <p>Subtotal</p>
+            </div>
+            <div class="amount-price">
+              <p id="subtotal"></p>
+            </div>
+          </div>
+          <div class="amount">
+            <div class="amount-name">
+              <p>Discount</p>
+            </div>
+            <div class="amount-price">
+              <p id="discount"></p>
+            </div>
+          </div>
+          <div class="amount">
+            <div class="amount-name">
+              <p>Dilivery Fee</p>
+            </div>
+            <div class="amount-price">
+              <p>£22.00</p>
+            </div>
+          </div>
+          <hr>
+          <div class="total">
+            <div class="total-name">
+              <p>Total</p>
+            </div>
+            <div class="total-price">
+              <p id="grandtotal"></p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <input type="submit" value="Pay" id="pay" name="pay" class="paybutton" onclick="">
+      </form>
+      </div>
+      
+    </section>
+
+    <section id="checkout-success">
+      <div id="sucess-title">
+        <img src="images/shop/sucess.png" alt="success">
+        <h1>Thank you for your purchase! 🎉 </h1>
+        <p id="success-tagline">You will receive an confirmation letter through your email</p>
+      </div>
+      <div id="success-summery">
+        <div class="success-row">
+          <img src="images/shop/date.svg" alt="box">
+          <h3>Date</h3>
+          <p id="date-inner"></p>
+          <script>
+            var currentDate = new Date();
+            var dateElement = document.getElementById("date-inner");
+            var options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+            dateElement.textContent = currentDate.toLocaleDateString(undefined, options);
+          </script>
+        </div>
+    
+      
+        <div class="success-row">
+          <img src="images/shop/card.svg" alt="box">
+          <h3>Payment Method</h3>
+          <img src="/Images/shop/master.png" style="max-width: 30px;">
+        </div>
+        <div><hr></div>
+        
+        <div class="success-row">
+          <img src="images/shop/order.svg" alt="box">
+          <h3>Order Number</h3>
+          <p>123456789</p>
+        </div>
+       
+        <div><hr></div>
+        <div id="continue-button"><a href="/shop.html"><button>Continue shopping</button></a></div>
+      </div>
+    
+    </section>
 </body>
 
 <!--Javascripts-->
