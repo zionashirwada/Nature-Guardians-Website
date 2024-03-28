@@ -1,482 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <!--CSS Stylings-->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/shop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <!--CSS Stylings-->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/shop.css">
 </head>
 
-
-
 <body>
-    <section id="shop">
+  <header style="position: static;">
+    <nav>
+       <div class="logo">
+          <img src="/images/Logo.png" alt="Site-logo">
+       </div>
+       <ul>
+          <li>
+             <a href="index.html" >Home</a>
+          </li>
+          <li>
+             <a href="shop.html" class="active">Shop</a>
+          </li>
+          <li>
+             <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+             <a href="team.html">Our Team</a>
+          </li>
+          <li>
+             <a href="feedback.html">rate us</a>
+          </li>
+       </ul>
+       <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+    </nav>
+    <label for="nav_check" class="side-veiw">
+       <div></div>
+       <div></div>
+       <div></div>
+   </label>
+ </header>
+  <section id="shop">
     <div id="hero">
-<div id="text-container">
-    <h1 class="fade-in">Shop to Save Species</h1>
-    <p class="fade-in">Our store offers sustainable products that support global wildlife conservation. Each purchase funds programs protecting endangered species and fragile ecosystems.</p>
-    <p class="fade-in">Join us in taking impactful action for at-risk wildlife. 100% of profits are donated to on-the-ground conservation partners like WWF and Conservation International. Your support allows these groups to defend biodiversity in the places that need it most.</p>
-    <p class="fade-in">Help make a difference with every purchase. Together we can safeguard life on land.</p>
-    <button class="button pulse"><a href="">Shop Now </a></button>
-</div>
-<div id="image-container">
-    <img src="Images/shop/hero-img.png" alt="Shop to Save Species" class="slide-in-right">
-</div>
-</div>
+      <div id="text-container">
+        <h1 class="fade-in">Shop to Save Species</h1>
+        <p class="fade-in">
+          Our store offers sustainable products that support global wildlife
+          conservation. Each purchase funds programs protecting endangered
+          species and fragile ecosystems.
+        </p>
+        <p class="fade-in">
+          Join us in taking impactful action for at-risk wildlife. 100% of
+          profits are donated to on-the-ground conservation partners like WWF
+          and Conservation International. Your support allows these groups to
+          defend biodiversity in the places that need it most.
+        </p>
+        <p class="fade-in">
+          Help make a difference with every purchase. Together we can
+          safeguard life on land.
+        </p>
+        <button class="button pulse">Shop Now</button>
+      </div>
+      <div id="image-container">
+        <img src="Images/shop/hero-img.png" alt="Shop to Save Species" class="slide-in-right">
+      </div>
+    </div>
     <div class="items">
-        <div class="left">
-            <div class="content">
-                <div id="filter_container">
-                    
-                    <div class="filter_img">
-                        
-                        <h3>Filters</h3>
-                    </div>
-                    <div class="filter_img slide-in-left" id="filter-0">
-                        <img src="Images/shop/filter1.png" alt="filter">
-                        <h5>All <br> Products</h5>
-                    </div>
-                    
-                    <div class="filter_img slide-in-left" id="filter-1">
-                        <img src="Images/shop/filter3.png" alt="filter">
-                        <h5>Home<br> & Lifestyle</h5>
-                    </div>
-                    <div class="filter_img slide-in-left" id="filter-2">
-                        <img src="Images/shop/filter2.png" alt="filter">
-                        <h5>Apparel <br>& Accessories</h5>
-                    </div>
-                    <div class="filter_img slide-in-left" id="filter-3">
-                        <img src="Images/shop/filter4.png" alt="filter">
-                        <h5>Conservation <br> Support</h5>
-                    </div>
-                
-                </div>
-
-                <div class="category_container" id="category-1">
-                    <div class="category_type">
-                        <h3>Home & Lifestyle</h3>
-                    </div>
-
-                    <div class="item_list">
-                        <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item1.1.jpeg" alt="item">
-                            <p class="item_title">Coffee Gift Set</h>
-                            <p class="price">£29.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                          <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item1.2.jpeg" alt="item">
-                            <p class="item_title">Steel Water Bottle</h>
-                            <p class="price">£17.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio1" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio1" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio1" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                          <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item1.3.jpeg" alt="item">
-                            <p class="item_title">Candle Set</h>
-                            <p class="price">£24.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio2" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio2" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio2" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                    </div>
-                    <div class="item_list">
-                        <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item1.4.jpeg" alt="item">
-                            <p class="item_title">Wall Art Print</h>
-                            <p class="price">£19.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio3" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio3" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio3" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div><div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item1.5.jpeg" alt="item">
-                            <p class="item_title">Glass Coasters</h>
-                            <p class="price">£12.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio4" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio4" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio4" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                          <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item1.6.jpeg" alt="item">
-                            <p class="item_title">Blanket Throw</h>
-                            <p class="price">£34.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio5" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio5" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio5" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                    </div>
-                </div>
-                <div class="category_container" id="category-2">
-                    <div class="category_type">
-                        <h3>Apparel & Accessories</h3>
-                    </div>
-
-                    <div class="item_list">
-                        <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item2.1.jpeg" alt="item">
-                            <p class="item_title">Bamboo glasses</h>
-                            <p class="price">£24.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio6" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio6" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio6" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div><div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item2.2.jpeg" alt="item">
-                            <p class="item_title">Rainforest T-Shirt </h>
-                            <p class="price">£19.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio7" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio7" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio7" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                          <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item2.3.jpeg" alt="item">
-                            <p class="item_title">Tote Bag </h>
-                            <p class="price">£12.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio8" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio8" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio8" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                    </div>
-                    
-                    <div id="banner_container">
-                        <div class="banner_text">
-                            <p class="t-price" id="t-price">£25.99</p>
-                            <p class="t-title" id="t-title">Monkey print T-shirt</p>
-                            <p class="t-desc">Buy our Animal themed Hand-Made , Eco-Friendly , Recycable T-shirts</p>
-                            
-                            <button class="t-button" id="t-button" data-title="Monkey print T-shirt">Coming Soon!</button>
-                            
-                        </div>
-                        <div class="banner_img">
-                            <button class="skipButton" onclick="prevImage()">←</button>
-                            <img id="timage" src="Images/shop/t1.png" alt="tshirt">
-                            <button class="skipButton" onclick="nextImage()">→</button>
-                        </div>
-                    </div> </div>
-                
-                <div class="category_container" id="category-3">
-                    <div class="category_type">
-                        <h3>Conservation Support</h3>
-                    </div>
-
-                    <div class="item_list">
-                        <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item3.1.jpeg" alt="item">
-                            <p class="item_title">Plush Toy</h>
-                            <p class="price">£15.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio9" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio9" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio9" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div><div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item3.2.jpeg" alt="item">
-                            <p class="item_title">Bamboo Utensils</h>
-                            <p class="price">£9.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio10" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio10" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio10" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                          <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item3.3.jpeg" alt="item">
-                            <p class="item_title">Straw Set</h>
-                            <p class="price">£6.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio11" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio11" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio11" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                    </div>
-                    <div class="item_list">
-                        <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item3.4.jpeg" alt="item">
-                            <p class="item_title">Animal Adoption</h>
-                            <p class="price">£29.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio12" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio12" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio12" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div><div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item3.5.jpeg" alt="item">
-                            <p class="item_title">Donation Bundle </h>
-                            <p class="price">£24.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio13" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio13" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio13" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                          <div class="card">
-                            <div class="card-details">
-                               <img class="item_img" src="Images/shop/item3.6.jpeg" alt="item">
-                            <p class="item_title">Plant a tree</h>
-                            <p class="price">£34.99</p>
-                            <div class="radio-inputs">
-                                <label class="radio">
-                                  <input type="radio" name="radio14" checked="" class="radio" value="S">
-                                  <span class="name">S</span>
-                                </label>
-                                <label class="radio">
-                                  <input type="radio" name="radio14" class="radio" value="M">
-                                  <span class="name">M</span>
-                                </label>
-                                    
-                                <label class="radio">
-                                  <input type="radio" name="radio14" class="radio" value="L">
-                                  <span class="name">L</span>
-                                </label>
-                              </div>
-                            </div>
-                            <button class="card-button">Add to Basket</button>
-                          </div>
-                    </div>
-                </div>
-                
-            <!--/content  -->
+      <div class="left">
+        <div class="content">
+          <div id="filter_container">
+            <div class="filter_img">
+              <h3>Filters</h3>
             </div>
+            <div class="filter_img slide-in-left" id="filter-0">
+              <img src="Images/shop/filter1.png" alt="filter">
+              <h5>
+                All <br>
+                Products
+              </h5>
+            </div>
+
+            <div class="filter_img slide-in-left" id="filter-1">
+              <img src="Images/shop/filter3.png" alt="filter">
+              <h5>
+                Home<br>
+                & Lifestyle
+              </h5>
+            </div>
+            <div class="filter_img slide-in-left" id="filter-2">
+              <img src="Images/shop/filter2.png" alt="filter">
+              <h5>Apparel <br>& Accessories</h5>
+            </div>
+            <div class="filter_img slide-in-left" id="filter-3">
+              <img src="Images/shop/filter4.png" alt="filter">
+              <h5>
+                Conservation <br>
+                Support
+              </h5>
+            </div>
+          </div>
+
+          <div class="category_container" id="category-1">
+            <div class="category_type">
+              <h3>Home & Lifestyle</h3>
+            </div>
+
+            <div class="item_list">
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item1.1.jpeg" alt="item">
+                  <p class="item_title">Coffee Gift Set</p>
+                  <p class="price">£29.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item1.2.jpeg" alt="item">
+                  <p class="item_title">Steel Water Bottle</p>
+                  <p class="price">£17.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio1" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio1" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio1" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item1.3.jpeg" alt="item">
+                  <p class="item_title">Candle Set</p>
+                  <p class="price">£24.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio2" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio2" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio2" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+            </div>
+            <div class="item_list">
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item1.4.jpeg" alt="item">
+                  <p class="item_title">Wall Art Print</p>
+                  <p class="price">£19.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio3" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio3" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio3" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item1.5.jpeg" alt="item">
+                  <p class="item_title">Glass Coasters</p>
+                  <p class="price">£12.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio4" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio4" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio4" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item1.6.jpeg" alt="item">
+                  <p class="item_title">Blanket Throw</p>
+                  <p class="price">£34.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio5" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio5" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio5" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+            </div>
+          </div>
+          <div class="category_container" id="category-2">
+            <div class="category_type">
+              <h3>Apparel & Accessories</h3>
+            </div>
+
+            <div class="item_list">
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item2.1.jpeg" alt="item">
+                  <p class="item_title">Bamboo glasses</p>
+                  <p class="price">£24.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio6" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio6" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio6" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item2.2.jpeg" alt="item">
+                  <p class="item_title">Rainforest T-Shirt</p>
+                  <p class="price">£19.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio7" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio7" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio7" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item2.3.jpeg" alt="item">
+                  <p class="item_title">Tote Bag</p>
+                  <p class="price">£12.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio8" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio8" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio8" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+            </div>
+
+            <div id="banner_container">
+              <div class="banner_text">
+                <p class="t-price" id="t-price">£25.99</p>
+                <p class="t-title" id="t-title">Monkey print T-shirt</p>
+                <p class="t-desc">
+                  Buy our Animal themed Hand-Made , Eco-Friendly , Recycable
+                  T-shirts
+                </p>
+
+                <button class="t-button" id="t-button" data-title="Monkey print T-shirt">
+                  Coming Soon!
+                </button>
+              </div>
+              <div class="banner_img">
+                <button class="skipButton" onclick="prevImage()">←</button>
+                <img id="timage" src="Images/shop/t1.png" alt="tshirt">
+                <button class="skipButton" onclick="nextImage()">→</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="category_container" id="category-3">
+            <div class="category_type">
+              <h3>Conservation Support</h3>
+            </div>
+
+            <div class="item_list">
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item3.1.jpeg" alt="item">
+                  <p class="item_title">Plush Toy</p>
+                  <p class="price">£15.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio9" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio9" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio9" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item3.2.jpeg" alt="item">
+                  <p class="item_title">Bamboo Utensils</p>
+                  <p class="price">£9.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio10" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio10" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio10" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item3.3.jpeg" alt="item">
+                  <p class="item_title">Straw Set</p>
+                  <p class="price">£6.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio11" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio11" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio11" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+            </div>
+            <div class="item_list">
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item3.4.jpeg" alt="item">
+                  <p class="item_title">Animal Adoption</p>
+                  <p class="price">£29.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio12" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio12" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio12" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item3.5.jpeg" alt="item">
+                  <p class="item_title">Donation Bundle</p>
+                  <p class="price">£24.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio13" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio13" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio13" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+              <div class="card">
+                <div class="card-details">
+                  <img class="item_img" src="Images/shop/item3.6.jpeg" alt="item">
+                  <p class="item_title">Plant a tree</p>
+                  <p class="price">£34.99</p>
+                  <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio14" checked="" class="radio" value="S">
+                      <span class="name">S</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio14" class="radio" value="M">
+                      <span class="name">M</span>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="radio14" class="radio" value="L">
+                      <span class="name">L</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="card-button">Add to Basket</button>
+              </div>
+            </div>
+          </div>
+
+          <!--/content  -->
+        </div>
         <!--left  -->
-        </div>
-        <div class="right">
-           <div id="basket">
-            <div id="basket-header"> 
-                <h2 id="title">Your Basket </h2>
-                <span id="clear"><a>Clear all</a></span>
-                          
-             </div><div><span class="line"></span></div>
-                <div id="error-message"></div>
-             <div id="basket-items">
-               
-                
-                
-                
-                
-             </div>
-            <div id="basket-total">
-           </div>
-           <div id="checkout-button-container">
-               <button id="checkout-button">Continue to checkout</button>
-               <div>
-            
-           </div> 
-        </div>
+      </div>
+      <div class="right">
+        <div id="basket">
+          <div id="basket-header">
+            <h2 id="title">Your Basket</h2>
+            <span id="clear"><a>Clear all</a></span>
+          </div>
+          <div><span class="line"></span></div>
+          <div id="error-message"></div>
+          <div id="basket-items"></div>
+          <div id="basket-total"></div>
+          <div id="checkout-button-container">
+            <button id="checkout-button">Continue to checkout</button>
+            <div></div>
+          </div>
         </div>
       </div>
-      </div>
-    </section>
-    <section id="checkout" >
-      
+    </div>
+  </section>
+  <section id="checkout">
+    <form id="detail-form">
       <div id="info">
         <h1>Checkout</h1>
         <div id="summery">
-          <div class="info-img"> 
+          <div class="info-img">
             <img class="itemtitleimage" src="Images/shop/cart.svg" alt="summary">
             <p>Order summary</p>
           </div>
@@ -484,105 +534,98 @@
             <table>
               <tr>
                 <th class="col1"></th>
-                <th  class="col2">Name</th>
+                <th class="col2">Name</th>
                 <th class="col3">Customization</th>
                 <th class="col4">Price</th>
               </tr>
-          
             </table>
           </div>
-         
         </div>
         <div id="dilivery">
-          <div class="info-img"> 
-            <img class="itemtitleimage" src="Images/shop/diliver.svg" alt="summary" name="dilivery">
+          <div class="info-img">
+            <img class="itemtitleimage" src="Images/shop/diliver.svg" alt="summary">
             <p>Delivery options</p>
           </div>
           <div id="dilivery-radio">
-            
-              
-              <div class="radio-inputs">
-                <label>
-                  <input class="radio-input" type="radio" value="amazon" name="dilivery" checked>
-                    <span class="radio-tile">
-                      <span class="radio-icon">
-                        <img src="/Images/shop/amazon.svg" >
-                      </span>
-                     
-                    </span>
-                </label>
-                <label>
-                  <input class="radio-input" type="radio" value="dhl" name="dilivery">
-                    <span class="radio-tile">
-                      <span class="radio-icon">
-                      <img src="/Images/shop/dhl.svg" >
-                    </span>
-                     
-                    </span>
-                </label>
-                <label>
-                  <input checked="" class="radio-input" type="radio" value="fedex" name="dilivery">
-                  <span class="radio-tile">
-                    <span class="radio-icon">
-                      <img src="/Images/shop/fedex.svg" > </span>
-                    
+            <div class="radio-inputs">
+              <label>
+                <input class="radio-input" type="radio" value="amazon" name="dilivery" checked>
+                <span class="radio-tile">
+                  <span class="radio-icon">
+                    <img src="images/shop/amazon.svg" alt="amazon">
                   </span>
-                </label>
-                <label>
-                  <input class="radio-input" type="radio" value="ups" name="dilivery">
-                  <span class="radio-tile">
-                    <span class="radio-icon">
-                      <img src="/Images/shop/ups.svg" > </span>
-                    
+                </span>
+              </label>
+              <label>
+                <input class="radio-input" type="radio" value="dhl" name="dilivery">
+                <span class="radio-tile">
+                  <span class="radio-icon">
+                    <img src="images/shop/dhl.svg" alt="dhl">
                   </span>
-                </label>
+                </span>
+              </label>
+              <label>
+                <input checked="" class="radio-input" type="radio" value="fedex" name="dilivery">
+                <span class="radio-tile">
+                  <span class="radio-icon">
+                    <img src="images/shop/fedex.svg" alt="fedex">
+                  </span>
+                </span>
+              </label>
+              <label>
+                <input class="radio-input" type="radio" value="ups" name="dilivery">
+                <span class="radio-tile">
+                  <span class="radio-icon">
+                    <img src="images/shop/ups.svg" alt="ups">
+                  </span>
+                </span>
+              </label>
             </div>
-            
-            
           </div>
         </div>
+
         <div id="details">
-          <div class="info-img"> 
+          <div class="info-img">
             <img class="itemtitleimage" src="Images/shop/profile.svg" alt="summary">
             <p>Order summary</p>
-          
           </div>
-          <form action="" id="detail-form">
-<div class="input-row">
-  <div class="input-container">
-    <input placeholder="Full name" class="input-field" type="text" required id="username-input">
-    <label for="name" class="input-label">Full name</label>
-    <span class="input-highlight"></span>
-  </div><div class="input-container">
-    <input placeholder="Phone Number" class="input-field" type="text" required id="phone-input">
-    <label for="Phone Number" class="input-label">Phone Number</label>
-    <span class="input-highlight"></span>
-  </div>
-</div>
+
+          <div class="input-row">
+            <div class="input-container">
+              <input placeholder="Full name" class="input-field" type="text" required id="username-input">
+              <label for="username-input" class="input-label">Full name</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+              <input placeholder="Phone Number" class="input-field" type="text" required id="phone-input">
+              <label for="phone-input" class="input-label">Phone Number</label>
+              <span class="input-highlight"></span>
+            </div>
+          </div>
           <div class="input-container">
             <input placeholder="Address" class="input-field" type="text" required id="address-input">
-            <label for="Address" class="input-label">Address</label>
+            <label for="address-input" class="input-label">Address</label>
             <span class="input-highlight"></span>
           </div>
+
           <div id="save-check">
-          <input type="checkbox" id="save" name="save" value="save">
-          <label for="save">Save as default</label>
-        </div>
+            <input type="checkbox" id="save" name="save" value="save">
+            <label for="save">Save as default</label>
+          </div>
+
         </div>
       </div>
-      
 
-      
       <div id="payment">
-        <div class="info-img" style="padding-left: 20px;"> 
-          <img  class="itemtitleimage" src="Images/shop/payment.svg" alt="summary">
+        <div class="info-img" style="padding-left: 20px">
+          <img class="itemtitleimage" src="Images/shop/payment.svg" alt="summary">
           <p>Order summary</p>
         </div>
 
         <div id="card-info">
           <p>Change payment methods</p>
           <div id="cc">
-            <img src="/Images/shop/master.png" alt="master">
+            <img src="images/shop/master.png" alt="master">
             <h3>Master card</h3>
             <h6>**** **** **** 1234</h6>
           </div>
@@ -591,13 +634,13 @@
           <h1>Voucher</h1>
           <div id="voucher-feild">
             <input type="text" placeholder="NEWUSER24" id="voucher" name="voucher" disabled>
-            <button id="apply" name="apply">Applied!</button>
+            <button id="apply" name="apply" disabled>Applied!</button>
           </div>
           <button id="voucher-ammount" name="voucher-ammount">15% OFF</button>
         </div>
         <div id="amounts">
-          <div class="info-img"> 
-            <img  class="itemtitleimage" src="Images/shop/sum.svg" alt="summary">
+          <div class="info-img">
+            <img class="itemtitleimage" src="Images/shop/sum.svg" alt="summary">
             <p>Order summary</p>
           </div>
 
@@ -634,57 +677,91 @@
               <p id="grandtotal"></p>
             </div>
           </div>
-
-
         </div>
 
         <input type="submit" value="Pay" id="pay" name="pay" class="paybutton" onclick="">
-      </form>
       </div>
-      
-    </section>
+    </form>
+  </section>
 
-    <section id="checkout-success">
-      <div id="sucess-title">
-        <img src="images/shop/sucess.png" alt="success">
-        <h1>Thank you for your purchase! 🎉 </h1>
-        <p id="success-tagline">You will receive an confirmation letter through your email</p>
+  <section id="checkout-success">
+    <div id="sucess-title">
+      <img src="images/shop/sucess.png" alt="success">
+      <h1>Thank you for your purchase! 🎉</h1>
+      <p id="success-tagline">
+        You will receive an confirmation letter through your email
+      </p>
+    </div>
+    <div id="success-summery">
+      <div class="success-row">
+        <img src="images/shop/date.svg" alt="box">
+        <h3>Date</h3>
+        <p id="date-inner"></p>
+        <script>
+          var currentDate = new Date();
+          var dateElement = document.getElementById("date-inner");
+          var options = { day: "2-digit", month: "2-digit", year: "numeric" };
+          dateElement.textContent = currentDate.toLocaleDateString(
+            undefined,
+            options
+          );
+        </script>
       </div>
-      <div id="success-summery">
-        <div class="success-row">
-          <img src="images/shop/date.svg" alt="box">
-          <h3>Date</h3>
-          <p id="date-inner"></p>
-          <script>
-            var currentDate = new Date();
-            var dateElement = document.getElementById("date-inner");
-            var options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-            dateElement.textContent = currentDate.toLocaleDateString(undefined, options);
-          </script>
-        </div>
-    
-      
-        <div class="success-row">
-          <img src="images/shop/card.svg" alt="box">
-          <h3>Payment Method</h3>
-          <img src="/Images/shop/master.png" style="max-width: 30px;">
-        </div>
-        <div><hr></div>
-        
-        <div class="success-row">
-          <img src="images/shop/order.svg" alt="box">
-          <h3>Order Number</h3>
-          <p>123456789</p>
-        </div>
-       
-        <div><hr></div>
-        <div id="continue-button"><a href="/shop.html"><button>Continue shopping</button></a></div>
+
+      <div class="success-row">
+        <img src="images/shop/card.svg" alt="box">
+        <h3>Payment Method</h3>
+        <img src="images/shop/master.png" style="max-width: 30px" alt="cardtype">
       </div>
-    
-    </section>
+      <div>
+        <hr>
+      </div>
+
+      <div class="success-row">
+        <img src="images/shop/order.svg" alt="box">
+        <h3>Order Number</h3>
+        <p>123456789</p>
+      </div>
+
+      <div>
+        <hr>
+      </div>
+      <div id="continue-button">
+        <button onclick="window.location.href='shop.html'">Continue shopping</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+   <div class="footer-logo">
+      <img src="/images/footerlogo.png" height="90" alt="Footer Logo">
+   </div>
+   <div class="footer-text">
+      <div class="links-foot">
+         <a href="index.html" class="a-links">About us</a>
+         <a href="shop.html" class="a-links">Shop</a>
+         <a href="gallery.html" class="a-links">Gallery</a>
+         <a href="team.html" class="a-links">Our Team</a>
+         <a href="feedback.html" class="a-links">Rate us</a>
+      </div>
+      <div class="foot-down">
+         <p class="copyrights">&copy; 2024 OurBuilt</p>
+         <ul class="foot-list">
+            <li class="li-itemss">Privacy</li>
+            <li class="li-itemss">Terms</li>
+            <li class="li-itemss" onclick="location.href='google.com'">Sitemap</li>
+         </ul>
+      </div>
+   </div>
+   <div class="btn-cont">
+      <button class="donate-btn" onclick="window.location.href='https://teamtrees.org'">Donate </button>
+      <img class="img" height="30" width="30" src="/images/righticon.png">
+   </div>
+</footer>
+  <!--Javascript-->
+
+  <script src="Scripts/shop.js"></script>
+  <script src="Scripts/main.js"> </script>
 </body>
 
-<!--Javascripts-->
-<script src="scripts/main.js"></script>
-<script src="Scripts/shop.js"></script>
+
 </html>

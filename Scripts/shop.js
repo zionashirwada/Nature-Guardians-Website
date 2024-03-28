@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
             errorMessage.innerHTML = `<p>You should have a minimum of 1 item to Checkout</p>`;
         } else {
             shopSection.style.display = 'none';
-            checkoutSection.style.display = 'flex';
+            checkoutSection.style.display = 'block';
         }
     });
 

@@ -1,0 +1,560 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+:root {
+ 
+  --first-color: #04543DFF;
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: rgb(252, 255, 245);
+  --container-color: #F6FCE8FF;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+#body-container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    background-image: url('"C:\Users\USER\Downloads\321515.jpg"'); /* Replace this URL with the URL of your desired background image */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 45;
+  }
+  
+
+
+#body-container img {
+  display: block;
+  max-width: 90%;
+  height: 100%;
+}
+
+
+.container {
+  display:grid; /*grid*/
+  place-items: center;
+  margin-inline: 3rem;
+  padding-block: 5rem;
+  height: 100vh; 
+}
+
+.pageTitle {
+  text-align: center;
+  padding: 100px;
+
+}
+
+.card__container {
+  display: grid;
+  row-gap: 5rem;
+   
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.card__img {
+  width: 200px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 200px;
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.container22 .H5 {
+  left: 100 px;
+}
+
+.aboutTile {
+  padding: auto;
+}
+
+/*.about1 {
+
+  position:absolute ;
+  left: 850px;
+  top: 830px;
+}*/
+
+.container-1{                                 /*eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+  background-color: #F6FCE8FF;
+  position:absolute ;
+  left: 770px;
+  top: 960px;
+  border-radius: 0.5rem;
+  padding-block: 10px;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.3);
+  padding: 20px;
+  transition: transform 1s, background-color 1s , color 1s;
+}
+
+.container-1:hover {
+  transform:translateY(10px) ;
+  background-color: rgba(5, 153, 25, 0.459);
+  color: black;
+}
+
+.container-2{
+
+  background-color: rgba(98, 216, 133, 0.774);
+  position:absolute ;
+  border-radius: 1.5rem;
+  /*box-shadow: 10px 8px 24px hsl(0, 0%, 4%);*/
+  padding: 20px;
+}
+
+@keyframes slideinleft {
+  from{
+    transform: translateX(770px); /*where anime start from*/
+  }
+  to {
+    transform: translateX(1100px);
+  }
+}
+.container-2{
+  animation-name:slideinleft;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 10000000000;
+  animation-direction: normal;
+  animation-fill-mode:both;
+
+  transform: translateX(-150px);
+  top: 1189px;
+
+}
+
+/* Container 42 */
+.container42 {
+  position: absolute; 
+  top: 190%; /* Adjust as needed for vertical positioning */
+  left: 25%; /* Adjust as needed for horizontal positioning */
+  width: 2200%; /* Adjust as needed for width */
+  max-width: 200%; /* Set maximum width */
+  height: 300px; 
+  background: #04543DFF; /* primary-500 */
+  border-radius: 10px; 
+  transform: translate(-50%, -50%); /* Center container horizontally and vertically */
+}
+
+/* Image 51 */
+.image52 {
+  position: absolute; 
+  top: 10%; /* Adjust as needed for vertical positioning */
+  left: 5%; /* Adjust as needed for horizontal positioning */
+  width: 20%; /* Adjust as needed for width */
+  max-width: 100px; /* Set maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0px; 
+}
+
+#body-container h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(243, 247, 246);
+  position: absolute;
+  top: 50px; /* Adjust top position */
+  left: 200px;
+}
+
+#body-container h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  top: 64px; /* Adjust top position */
+  left: 200px;
+  position: absolute;
+}
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 1010px) {
+  .container42 {
+    width: 90%; /* Adjust container width for smaller screens */
+    max-width: none; /* Reset maximum width */
+    height: auto; /* Allow container to adjust height based on content */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .image52 {
+    width: 30%; /* Adjust image width for smaller screens */
+    max-width: none; /* Reset maximum width */
+  }
+}
+
+.container43 {
+
+  top: 90px; /* Adjust top position */
+  left: 200px;
+  position: absolute;
+
+}
+#sub-title{
+  font-size: medium;
+  font-weight: bold;
+
+}
+
+#about1{
+  font-size: medium;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/*dis is agziz footer part fot demonstration*/
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #04543d;
+  height: 250px;
+  justify-content: space-between;
+}
+.a-links {
+  font-family: inherit;
+  padding: 16px 25px;
+  color: #fff;
+  font-size: medium;
+}
+.foot-down .foot-list,
+.li-itemss {
+  display: inline;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: none;
+}
+.li-itemss {
+  padding-right: 80px;
+  font-size: small;
+}
+.foot-list {
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+
+
+.copyrights {
+  color: white;
+  font-family: inherit;
+  font-size: small;
+  position: relative;
+  top: 13px;
+  
+}
+.foot-down {
+  display: flex;
+  position: relative;
+  font-family: inherit;
+  font-size: medium;
+}
+.footer-text {
+  padding-top: 50px;
+  width: 550px;
+}
+.li-itemss:hover{
+  cursor: pointer;
+}
+.donate-btn {
+  padding: 16px 24px 16px 8px;
+  color: #465e0e;
+  background-color: #c1e865;
+  border: none;
+  font-family: inherit;
+  border-radius: 25px;
+  width: 150px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-cont {
+  padding: 50px 50px;
+}
+.donate-btn:hover {
+  background-color: #4eff09;
+}
+.btn-cont .img {
+  z-index: 1;
+  position: relative;
+  top: 10px;
+  right: 70px;
+  margin-left: 20px;
+}
+
+.footer-logo {
+  position: relative;
+  top: 45px;
+  left: 50px;
+  height: 200px;
+}
+
+.links-foot {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 10;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__img {
+    width: 348px;
+  }
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
+
+/* BAVBAR*/
+
+ul {
+  padding-top: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 9px 2px #00000010;
+}
+.info-btn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #04543d;
+  width: 110px;
+  height: 40px;
+  border: none;
+  font-family: inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+.logo {
+  border-radius: 5px;
+  box-shadow: 3px 3px 9px 2px #00000010;
+}
+
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  z-index: 10;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  display: inline-block;
+  color: #000;
+  padding: 5px 0;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+header nav ul li a:hover {
+  border-bottom-color: #00a803;
+}
+header nav ul li a.active {
+  border-bottom-color: #04543d;
+}
+.side-veiw {
+  cursor: pointer;
+  display: none;
+}
+.side-veiw div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #000;
+}
