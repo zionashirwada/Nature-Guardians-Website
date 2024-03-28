@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <link rel="stylesheet" href="styles/team.css">
+      <link rel="stylesheet" href="styles/navbar.css">
+      <link rel="stylesheet" href="styles/footer.css">
 
       <title>Team</title>
       
@@ -12,35 +14,32 @@
    <body>
 
       <header>
-         <nav>
-            <div class="logo">
-               <img src="/images/Logo.png" alt="Site-logo">
-            </div>
-            <ul>
-               <li>
-                  <a href="index.html">Home</a>
-               </li>
-               <li>
-                  <a href="shop.html">Shop</a>
-               </li>
-               <li>
-                  <a href="gallery.html">Gallery</a>
-               </li>
-               <li>
-                  <a href="team.html">Our Team</a>
-               </li>
-               <li>
-                  <a href="feedback.html">Rate Us</a>
-               </li>
-            </ul>
-            <button type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
-         </nav>
-         <label for="nav_check" class="side-veiw">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-      </header>
+         <!--Todo:Change Class for active page-->
+           <nav>
+              <div class="logo">
+                 <img src="Images/home/Logo.png" alt="Site-logo">
+              </div>
+              <ul>
+                 <li>
+                    <a href="home.html" >Home</a>
+                 </li>
+                 <li>
+                    <a href="shop.html">Shop</a>
+                 </li>
+                 <li>
+                    <a href="gallery.html">Gallery</a>
+                 </li>
+                 <li>
+                    <a href="team.html" class="active">Our Team</a>
+                 </li>
+                 <li>
+                    <a href="feedback.html">rate us</a>
+                 </li>
+              </ul>
+              <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+           </nav>
+          
+        </header>
       
       <div id="body-container">
          <div class="pageTitle">
@@ -127,38 +126,35 @@
 
 
  <!--agziz footer part -->
-         <div class="container42">
-            <footer>
-               <div class="footer-logo">
-                  <img src="/images/footerlogo.png" height="90" alt="Footer Logo">
-               </div>
 
-
-               
-               <div class="footer-text">
-                  <div class="links-foot">
-                     <a href="index.html" class="a-links">About us</a>
-                     <a href="shop.html" class="a-links">Shop</a>
-                     <a href="gallery.html" class="a-links">Gallery</a>
-                     <a href="team.html" class="a-links">Our Team</a>
-                     <a href="feedback.html" class="a-links">Rate us</a>
-                  </div>
-                  <div class="foot-down">
-                     <p class="copyrights"> &copy; 2024 OurBuilt</p>
-                     <ul class="foot-list">
-                        <li class="li-itemss">Privacy</li>
-                        <li class="li-itemss">Terms</li>
-                        <li class="li-itemss" onclick="location.href='google.com'">Sitemap</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="btn-cont">
-                  <button class="donate-btn" onclick="window.location.href='https://teamtrees.org'">Donate </button>
-                  <img class="img" height="30" width="30" src="/images/righticon.png">
-               </div>
-            </footer>
-               
-         </div>
       </div>
+      <footer>
+         <div class="footer-logo">
+            <img src="Images/home/footerlogo.png" height="90" alt="Footer Logo">
+         </div>
+         <div class="footer-text">
+            <div class="links-foot">
+               <p>Pages</p>
+               <a href="home.html" class="a-links">About us</a>
+               <a href="shop.html" class="a-links">Shop</a>
+               <a href="gallery.html" class="a-links">Gallery</a>
+               <a href="team.html" class="a-links">Our Team</a>
+               <a href="feedback.html" class="a-links">Rate us</a>
+            </div>
+            <div class="foot-down">
+               <h3>Legal</h3>
+               <ul class="foot-list">
+                  <li class="li-itemss">Privacy</li>
+                  <li class="li-itemss">Terms</li>
+                  <li class="li-itemss" onclick="location.href='sitemap.html'">Sitemap</li>
+               </ul>
+               <p class="copyrights">&copy; 2024 OurBuilt</p>
+            </div>
+         </div>
+         <div class="btn-cont">
+            <button class="donate-btn" onclick="window.location.href='https://teamtrees.org'">Donate </button>
+            <img class="img" height="30" width="30" src="Images/home/righticon.png" alt="right">
+         </div>
+      </footer>
    </body>
 </html>
