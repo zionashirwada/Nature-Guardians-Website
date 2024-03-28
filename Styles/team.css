@@ -7,7 +7,7 @@
   --first-color: #04543DFF;
   --title-color: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 35%);
-  --body-color: rgb(247, 247, 247);
+  --body-color: rgb(255, 255, 255);
   --container-color: #F6FCE8FF;
 
   /*========== Font and typography ==========*/
@@ -289,11 +289,16 @@
   text-decoration: none;
   font-size: var(--small-font-size);
   font-weight: 500;
-  color: var(--first-color);
+  color: var(--container-color);
+  background-color: var(--first-color);
+  border-radius: 5px;
+  padding: 4px 7px;
 }
 
 .card__button:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #c1e865;
+  color: var(--first-color);
 }
 
 /* Naming animations in hover */
