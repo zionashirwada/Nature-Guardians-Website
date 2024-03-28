@@ -1,21 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!--CSS Stylings-->
-    <link rel="stylesheet" href="styles/main.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles/navbar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-
-
-
 <body>
+   <header>
+      <nav>
+         <div class="logo">
+            <img src="Images/home/Logo.png" alt="Site-logo">
+         </div>
+         <ul>
+            <li>
+               <a href="home.html" class="active">Home</a>
+            </li>
+            <li>
+               <a href="shop.html">Shop</a>
+            </li>
+            <li>
+               <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+               <a href="team.html">Our Team</a>
+            </li>
+            <li>
+               <a href="feedback.html">rate us</a>
+            </li>
+         </ul>
+         <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+      </nav>
+     
+   </header>
 
-<h1>This is home </h1>
-    
+
+
+   <div class="home-content">
+      <h1>Save More of Nature's Treasures</h4>
+      <p>The food we eat, the water we drink, the air we breathe</p>
+      <p>-it all comes from nature.</p>
+      <button type="button" onclick="window.location.href='profile.html'" class="light-btn">Join us </button>
+      <button type="button" onclick="window.location.href='https://teamtrees.org/'" class="info-btn"> Donate</button>
+   </div>
+   <div class="img-container">
+
+      <img src="Images/home/plantingtree.png" alt="" height="300" width="240" class="plantimg">
+      <img src="Images/home/hands on air.png" alt="" height="150" width="243" class="handimg">
+      <img src="Images/home/laef.png" alt="" height="260" width="230" class="leafimg">
+      <img src="Images/home/windmiles.png" alt="" height="200" class="windimg">
+      <img src="Images/home/persononfeild.png" alt="" height="260" width="230" class="personimg">
+      <img src="Images/home/mushroom.png" alt="" height="280" width="250" class="mushroomimg">
+      <img src="Images/home/women-near-river.png" alt="" height="160"  class="riverimg">
+
+   </div>
+   <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
+   </button>
+   <div class="height">
+      <div class="text-container">
+         <h3>About us</h3>
+         <p>Our mission is to conserve nature and reduce the most pressing threats to the diversity of life on Earth.</p>
+      </div>
+      <ul class="accordian">
+         <li>
+            <input type="radio" name="accordian" id="whoarewe" checked>
+            <label for="whoarewe">Who are we</label>
+            <div class="aboutus-content">
+               <p>Advocates for sustainable land management, fostering awareness and action towards achieving SDG 
+                  goal Life on Land</p>
+            </div>
+         </li>
+         <li>
+            <input type="radio" name="accordian" id="whatwedo">
+            <label for="whatwedo">What we do</label>
+            <div class="aboutus-content">
+               <p>Educate, inspire, and collaborate to conserve and 
+                  restore terrestrial ecosystems for a thriving planet.</p>
+            </div>
+         </li>
+         <li>
+            <input type="radio" name="accordian" id="howtohelp">
+            <label for="howtohelp">How To Help</label>
+            <div class="aboutus-content">
+               <p>Support our mission through donations, volunteering, 
+                  spreading awareness, and adopting sustainable practices in daily life.</p>
+            </div>
+         </li>
+         <li>
+            <input type="radio" name="accordian" id="wherewework">
+            <label for="wherewework">Where We Work</label>
+            <div class="aboutus-content">
+               <p>Globally, focusing on areas vulnerable 
+                  to land degradation, deforestation, and biodiversity loss.</p>
+            </div>
+         </li>
+      </ul>
+
+   </div>
+
+   
+   <div class="contents-box">
+      <h4>More Pages..</h4>
+      <!-- <img src="Images/home/undraw_environment_iaus.svg" class="svg"> -->
+   </div>
+   
+   <div class="image-container">
+      
+        
+      <div class="card">
+          <video src="Images/home/ashir.mp4" autoplay muted loop></video>
+          <p class="read-more">Read more <span class="span-readmore" > >> </span></p>
+          <div class="text">
+              <h2>Let's explore the jurrasic world.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero placeat explicabo fuga. Qui, id.</p>
+              <button class="outline-btn" onclick="location.href='benul.html'">Veiw</button>
+          </div>
+
+      </div>
+
+      <div class="card">
+         <video src="Images/home/benul.mp4" autoplay muted loop></video>
+         <p class="read-more">Read more <span class="span-readmore" > >> </span></p>
+         <div class="text">
+            <h2>Let's explore the jurrasic world.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero placeat explicabo fuga. Qui, id.</p>
+            <button class="outline-btn" onclick="location.href='benul.html'">Veiw</button>
+        </div>
+     </div>
+
+     <div class="card">
+      <video src="Images/home/kavindu.MP4" autoplay muted loop></video>
+      <p class="read-more">Read more <span class="span-readmore"> >> </span></p>
+      <div class="text">
+         <h2>Let's explore the jurrasic world.</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero placeat explicabo fuga. Qui, id.</p>
+         <button class="outline-btn" onclick="location.href='benul.html'">Veiw</button>
+     </div>
+  </div>
+
+  <div class="card">
+   <video src="Images/home/agzaiyenth.mp4" autoplay muted loop></video>
+   <p class="read-more">Read more <span class="span-readmore"> >> </span></p>
+   <div class="text">
+      <h2>Rainforest Advocate</h2>
+      <p>Join the journey to save rainforests and preserve Earth's vital ecosystems. Let's make a difference together!</p>
+      <button class="outline-btn" onclick="location.href='benul.html'">Veiw</button>
+  </div>
+</div>
+      
+  </div>
+
+
+
+
+
+
+
+   <footer>
+      <div class="footer-logo">
+         <img src="Images/home/footerlogo.png" height="90" alt="Footer Logo">
+      </div>
+      <div class="footer-text">
+         <div class="links-foot">
+            <p>Pages</p>
+            <a href="home.html" class="a-links">About us</a>
+            <a href="shop.html" class="a-links">Shop</a>
+            <a href="gallery.html" class="a-links">Gallery</a>
+            <a href="team.html" class="a-links">Our Team</a>
+            <a href="feedback.html" class="a-links">Rate us</a>
+         </div>
+         <div class="foot-down">
+            <h3>Legal</h3>
+            <ul class="foot-list">
+               <li class="li-itemss">Privacy</li>
+               <li class="li-itemss">Terms</li>
+               <li class="li-itemss" onclick="location.href='sitemap.html'">Sitemap</li>
+            </ul>
+            <p class="copyrights">&copy; 2024 OurBuilt</p>
+         </div>
+      </div>
+      <div class="btn-cont">
+         <button class="donate-btn" onclick="window.location.href='https://teamtrees.org'">Donate </button>
+         <img class="img" height="30" width="30" src="Images/home/righticon.png" alt="right">
+      </div>
+   </footer>
+
+   <script src="main.js"></script>
 </body>
-
-<!--Javascripts-->
-<script src="scripts/main.js"></script>
 </html>

@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+.myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 220px; 
+  right: 10px;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: rgb(0, 107, 62); 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  
+}
+
+.myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* BUTTONS */
+
+.outline-btn{
+  display: inline;
+  width: 76px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00000000;
+  border: 1px solid #555 !important;
+  border-radius: 5px;
+
+}
+.outline-btn:hover{
+  background-color: #555;
+}
+
+
+
+
+
+.home-content button {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.home-content .light-btn:hover {
+  color: #fff;
+  background-color: #63a46c;
+  border: 1px solid #63a46c;
+}
+
+.light-btn:hover {
+  color: #fff;
+  background-color: #63a46c;
+  border: 1px solid #63a46c;
+}
+
+.home-content .info-btn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #04543d;
+  width: 110px;
+  height: 45px;
+  border: none;
+  font-size: 15px;
+  font-family: inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.home-content .info-btn:hover {
+  border: 10px solid #04543d;
+}
+.light-btn {
+  margin-top: 10px;
+  color: #04543d;
+  border: 1px solid #04543d;
+  background-color: #fff;
+  font-weight: 500;
+  width: 110px;
+  height: 45px;
+  font-family: inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.home-content {
+  text-align: center;
+  margin-top: 50px;
+  z-index: 1;
+}
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 15px;
+}
+.home-content p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #686565e8;
+}
+
+/* IMAGES STYLES */
+
+.img-container {
+  position: relative;
+  top: -70px;
+
+  height: 20px;
+   margin-left: 265px;
+   margin-right: 265px;
+}
+.plantimg {
+  position: relative;
+  top: -40px;
+}
+.handimg {
+  position: relative;
+  left: -250px;
+  bottom: -120px;
+}
+.leafimg {
+  position: relative;
+  left: -220px;
+  bottom: -120px;
+}
+.windimg {
+  position: relative;
+  bottom: -120px;
+  left: -180px;
+}
+.personimg {
+  position: relative;
+  left: -150px;
+  bottom: -120px;
+}
+.mushroomimg {
+  position: absolute;
+  top: 140px;
+  right: -5px;
+}
+.riverimg {
+  position: absolute;
+  right: -5px;
+  top: -40px;
+}
+
+.height {
+  margin-top: 450px;
+  width: 100%;
+  height: 610px;
+  background-image: url("../Images/home/try.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  margin-left: -1px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.accordian {
+  z-index: 1;
+  margin: 60px auto;
+  width: 600px;
+}
+.accordian li {
+  z-index: 2;
+  margin: 20px;
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px-1px rgba(0, 0, 0, 0.15),
+    -16px -16px 10px-1px rgba(0, 0, 0, 0.15);
+}
+.accordian li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+input[type="radio"] {
+  display: none;
+}
+.accordian .aboutus-content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .aboutus-content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.accordian input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+.text-container {
+  padding-top: 50px;
+  align-content: center;
+  font-family: inherit;
+  padding-left: 375px;
+  max-width: 70%;
+  max-height: 43px;
+  padding-bottom: 10px;
+}
+.text-container h3 {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+
+.svg{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -85px;
+  left: 30%;
+
+}
+
+.contents-box{
+  height: 70px;
+}
+
+
+
+
+
+
+
+
+
+/* CARDS */
+
+
+.image-container{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  padding:0rem 4rem ;
+  position: relative;
+  right: 1%;
+  margin-bottom: 20px;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+}
+
+
+.read-more{
+  z-index: 3;
+  color: white;
+  display: inline;
+  position: absolute;
+  left: 30px;
+  
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  bottom: 20px;
+}
+.span-readmore{
+  position: relative;
+  top: 2px;
+  color: red; 
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-size: 18px; 
+  font-weight: 700;
+}
+.card:hover .read-more{
+  opacity: 0;
+}
+
+
+h4{
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 700;
+  
+  font-size: 32px;
+  text-align: center;
+}
+
+.card{
+  margin: 30px 25px;
+  width: 280px;
+  height: 400px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 25px;
+}
+
+.card video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+
+.card .text{
+  color: white;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+  position: relative;
+}
+
+.card:hover .text{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover{
+  transform: translateY(20px);
+}
+
+.card:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgb(0, 0, 0));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 1;
+  border-radius: 25px;
+  
+
+}   
+
+.card .text h2{
+  position: relative;
+  top: -10px;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.card .text p{
+  font-size: small;
+  padding:5px 2rem 1rem;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+}
+
+.card .text button{
+  margin: 2rem;
+  border: none;
+}
+
+.card:hover:before{
+  background: linear-gradient(to bottom,rgba(73, 73, 77, 0.5),rgba(0, 0, 0, 0.8));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .side-veiw{
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+  }
+}
