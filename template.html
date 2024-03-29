@@ -1,0 +1,79 @@
+<!-- INSTRUCTIONS
+how to link the navbar to each page
+copy the header and paste it on your respective html document,remove the
+class="active" and apply it to the current page (For eg: if its shop.html,class="active" should 
+only be to the list item shop.html anchor link)
+next link navbar css to your html page,navbar.css -->
+<link rel="stylesheet" href="template.css">
+<script src="template.js"></script>
+<body style="height: 200vh;"></body>
+<header>
+    <nav>
+       <div class="logo">
+          <img src="/images/Logo.png" alt="Site-logo">
+       </div>
+       <ul>
+          <li>
+             <a href="index.html" class="active">Home</a>
+          </li>
+          <li>
+             <a href="shop.html">Shop</a>
+          </li>
+          <li>
+             <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+             <a href="team.html">Our Team</a>
+          </li>
+          <li>
+             <a href="feedback.html">rate us</a>
+          </li>
+       </ul>
+       <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+    </nav>
+    <label for="nav_check" class="side-veiw">
+       <div></div>
+       <div></div>
+       <div></div>
+   </label>
+ </header>
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+
+
+
+
+<footer>
+    <div class="footer-logo">
+       <img src="/images/footerlogo.png" height="90" alt="Footer Logo">
+    </div>
+    <div class="footer-text">
+       <div class="links-foot">
+          <a href="index.html" class="a-links">About us</a>
+          <a href="shop.html" class="a-links">Shop</a>
+          <a href="gallery.html" class="a-links">Gallery</a>
+          <a href="team.html" class="a-links">Our Team</a>
+          <a href="feedback.html" class="a-links">Rate us</a>
+       </div>
+       <div class="foot-down">
+          <p class="copyrights">&copy; 2024 OurBuilt</p>
+          <ul class="foot-list">
+             <li class="li-itemss">Privacy</li>
+             <li class="li-itemss">Terms</li>
+             <li class="li-itemss" onclick="location.href='google.com'">Sitemap</li>
+          </ul>
+       </div>
+    </div>
+    <div class="btn-cont">
+       <button class="donate-btn" onclick="window.location.href='https://teamtrees.org'">Donate </button>
+       <img class="img" height="30" width="30" src="/images/righticon.png">
+    </div>
+ </footer>
+
+
+
