@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+c
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-content {
+  background-image: url("/Content_page/Images/W2051756/forestbg.png");
+  height: 94vh;
+  object-fit: cover;
+  font-family: "Vollkorn", serif;
+}
+.main-content p {
+  text-align: center;
+  font-size: 62px;
+  padding-top: 200px;
+  font-family: "Vollkorn", serif;
+}
+
+.light-btn {
+    margin-top: 10px;
+    color: #04543d;
+    border: 1px solid #04543d;
+    background-color: #ffffff00;
+    font-weight: 500;
+    width: 110px;
+    height: 45px;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    border-radius: 50px;
+    margin: 40px;
+    cursor: pointer;
+  }
+  
+
+.light-btn:hover {
+  color: #fff;
+  background-color: #63a46c;
+  border: 1px solid #63a46c;
+}
+
+.buttons{
+    position: relative;
+    left: 765px;
+    top: 10px;
+}
+.buttons .info-btn{
+    margin: 40px;
+    height: 45px;
+    width: 110px;
+}
+
+.projects{
+    margin-top: 80px;
+}
+.projects h1{
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.cards{
+    height: 450px;
+    width: 400px;
+    margin: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.674);
+    border-radius: 8px;
+    
+}
+
+.contain-cards{
+    margin: 20px 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards .image-holder{
+    width: 100%;
+    height: 50%;
+}
+
+.cards .image-holder img{
+    height: 100%;
+    width:100%;
+}
+ .cards .content{
+    padding: 20px;
+ }
+ .cards .content h2{
+    margin-bottom: 20px;
+ }
+
+ .cards .content p{
+    color: gray;
+    margin-bottom: 20px;
+ }
+ .cards .content .light-btn{
+    background-color: #04543d;
+    color: #fff;
+    margin: 0;
+    margin-top: 25px;
+ }
+ .cards .content .icon{
+    position: relative;
+    right: -200px;
+    top: 10px;
+    cursor: pointer;
+ }
+
+ .projects .adj{
+    margin-left: 46%;
+    font-weight: 500;
+    font-size: 19px;
+    width: 160px;
+    height: 60px;
+    margin-top: 10px;
+    color: #04543d;
+    border: 1px solid #04543d;
+    background-color: #ffffff00;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    cursor: pointer;
+ }
+
+
+
+.adj:hover {
+  color: #fff;
+  background-color: #63a46c;
+  border: 1px solid #63a46c;
+}
