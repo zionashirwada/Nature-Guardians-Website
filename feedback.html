@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Feedback</title>
          <!-- linking css and js -->
-        <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-        <link rel="stylesheet" type="text/css" href="styles/footer.css">
-        <link rel="stylesheet" type="text/css" href="styles/feedback.css">
+        <link rel="stylesheet" type="text/css" href="Styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="Styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="Styles/feedback.css">
         <link rel="icon" href="Images/img.png">
         <script src="Scripts/feedback.js"></script>
     
@@ -24,7 +24,7 @@
                </div>
                <ul>
                   <li>
-                     <a href="index.html" >Home</a>
+                     <a href="/home.html" >Home</a>
                   </li>
                   <li>
                      <a href="shop.html">Shop</a>
@@ -48,14 +48,14 @@
            </label>
          </header>
          <video autoplay muted loop id="background-video">
-            <source src="trees.mp4" type="video/mp4">
+            <source src="/Videos/trees.mp4" type="video/mp4">
         </video>
 
        <!-- comment form -->
         <div class="container" id="details">
     
             <div id="comm">
-                <form name="myQuery" id="myQuery" action="mailto:agzaiyenth.20230746@iit.ac.lk" method="post" enctype="text/plain" >
+                <form name="myQuery" action="mailto:agzaiyenth.20230746@iit.ac.lk" id="myQuery" method="post" enctype="text/plain" >
                     <div class="details">
                         <div class="title">Share your experience?</div>
                             <div class="inputbox">
@@ -136,7 +136,7 @@
         <div class="message" id="popup" >
             <h1>Thank You!</h1>
             <p>Your feedback Successfully sent.</p>
-          <button type="button" onclick="document.location='home.html'">OK</button>
+          <button type="button" id="sub-bt" onclick="document.location='home.html'">OK</button>
 
         </div>
     </div>

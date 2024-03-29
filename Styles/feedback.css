@@ -42,7 +42,7 @@ body{
 
 .container{
     max-width: 45%;
-    height: 95vh;
+    height: 60vh;
     background: rgba(255, 255, 255, 1);
     padding:25px 35px ;
     margin-top: 170px;
@@ -73,9 +73,7 @@ body{
     font-size: medium;
 }
 
-.details .inputbox{
-    margin-top: 10px;
-}
+
 
 .details .inputbox input{
     margin-top: 10px;
