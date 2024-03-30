@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop</title>
   <!--CSS Stylings-->
-  <link rel="stylesheet" href="styles/main.css">
-  
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/shop.css">
-  <link rel="icon" href="Images/img.png">
+   <link rel="stylesheet" href="styles/shop.css">
+  <link rel="icon" href="Images/img.png" />
+  <link rel="stylesheet" href="styles/template.css">
+  <script src="Scripts/template.js"></script>
 </head>
 
 <body>
@@ -38,7 +36,7 @@
            <a href="feedback.html">rate us</a>
         </li>
      </ul>
-     <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+     <button  type="button" onclick="window.location.href='#category-1'" class="info-btn">Sign up</button>
   </nav>
   
 </header>
@@ -62,7 +60,7 @@
           Help make a difference with every purchase. Together we can
           safeguard life on land.
         </p>
-        <button class="button pulse">Shop Now</button>
+        <button class="dark-btn pulse" onclick="window.location.href='profile.html'">Shop Now</button>
       </div>
       <div id="image-container">
         <img src="Images/shop/hero-img.png" alt="Shop to Save Species" class="slide-in-right">
@@ -730,6 +728,9 @@
       </div>
     </div>
   </section>
+
+ 
+
   <footer>
     <div class="footer-logo">
        <img src="Images/home/footerlogo.png" height="90" alt="Footer Logo">
