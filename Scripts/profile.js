@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let step1Completed = false;
     let step2Completed = false;
     let step3Completed = false;
-
+    let step1skiped = true;
+    let step2skiped = true;
+    let step3skiped = true;
     // Select the buttons
     const btn1 = document.getElementById('btn-1');
     const btn2 = document.getElementById('btn-2');
@@ -149,17 +151,19 @@ function step1() {
 // Function to handle Step 1 "Done" button click
 function handleStep1DoneButtonClick() {
     step1Completed = true;
+    step1skiped = false;
     hideOverlay();
     updateButtonVisibility(2);
     updateDynamicDataSection1();
     updateProgressBar(2);
     updateSectionCard(1);
     addsvg(1);
+   
 }
 
 // Function to handle Step 1 "Skip" button click
 function handleStep1SkipButtonClick() {
-    step1Completed = true;
+    
     hideOverlay();
     updateButtonVisibility(2);
     
@@ -193,13 +197,14 @@ function handleStep2DoneButtonClick() {
     updateProgressBar(3);
     updateSectionCard(2);
     addsvg(2);
+    
 
     
 }
 
 // Function to handle Step 2 "Skip" button click
 function handleStep2SkipButtonClick() {
-    step2Completed = true;
+    
     hideOverlay();
     updateButtonVisibility(3);
  
@@ -232,11 +237,12 @@ function handleStep3DoneButtonClick() {
     updateProgressBar(4);
     updateSectionCard(3);
     addsvg(3);
+   
 }
 
 // Function to handle Step 3 "Skip" button click
 function handleStep3SkipButtonClick() {
-    step3Completed = true;
+   
     hideOverlay();
     updateButtonVisibility(4);
  
@@ -387,36 +393,8 @@ function showOverlay(htmlContent) {
         closeButton.addEventListener('click', handleCloseButtonClick);
     }
 }
-document.addEventListener('DOMContentLoaded', () => {
-    const verifyEmailBtn = document.getElementById('verifyEmailBtn');
-  
-    verifyEmailBtn.addEventListener('click', () => {
-      const emailInput = document.getElementById('step1-input-2');
-      const email = emailInput.value;
-  
-      // Send email verification request to the backend
-      fetch('/verify-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      })
-      .then(response => {
-        if (response.ok) {
-          // Email verification request successful
-          alert('Verification email sent. Please check your inbox.');
-        } else {
-          // Email verification request failed
-          alert('Failed to send verification email. Please try again later.');
-        }
-      })
-      .catch(error => {
-        console.error('Error sending verification request:', error);
-        alert('An error occurred. Please try again later.');
-      });
-    });
-  });
+
+
   
 
 });
