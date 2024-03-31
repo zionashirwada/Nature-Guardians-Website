@@ -1,0 +1,76 @@
+body {
+    background-color: #A8B580;
+    margin: 0;
+    padding: 0;
+}
+
+section h1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 10vh;
+    color: lightgreen;
+    font-size: 4vw; /* Responsive font size */
+    position: relative;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(45deg, green, #A8B580);
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+#allgroup g:hover rect {
+    stroke: green;
+    stroke-width: 2;
+    cursor: pointer;
+    fill: #c1e865;
+}
+
+#allgroup g:hover text {
+    font-weight: bold;
+    fill: black;
+    
+}
+#allgroup{
+    cursor: pointer;
+}
+rect {
+    fill: #04543d;
+    stroke: white;
+    stroke-width: 2;
+}
+
+text {
+    fill: white;
+    font-size: 1.5vw; /* Responsive font size */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-anchor: middle;
+}
+
+line {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.2vw; /* Responsive stroke width */
+}
+
+polyline {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.2vw; /* Responsive stroke width */
+}
+
+

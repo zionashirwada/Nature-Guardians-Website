@@ -41,6 +41,19 @@ Dark Green button */
   border-radius: 50px;
   cursor: pointer;
 }
+/*Dark green outline button*/
+.dark-outline-btn {
+  margin-top: 5px;
+  color: #04543d;
+  background-color: #fff;
+  border: #04543d 1px solid;
+  width: 110px;
+  height: 40px;
+  border: none;
+  font-family: inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
 /* Heading */
 .heading {

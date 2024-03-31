@@ -1499,7 +1499,9 @@ th {
     opacity: 1;
   }
 }
-
+#clear{
+  cursor: pointer;
+}
 .pulse {
   animation: pulse 1s infinite;
 }

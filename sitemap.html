@@ -3,17 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap</title>
-    <!--CSS Stylings-->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sitemap.css">
+    <script src="Scripts/sitemap.js" defer></script>
+    <link rel="icon" href="Images/img.png" />
+<link rel="stylesheet" href="styles/template.css">
+<script src="Scripts/template.js"></script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    <title>SITEMAP</title>
 </head>
-
-
-
 <body>
-    <h1>Sitemap</h1>
+    <header>
+        <nav>
+           <div class="logo">
+              <img src="/images/Logo.png" alt="Site-logo">
+           </div>
+           <ul>
+              <li>
+                 <a href="home.html" class="active">Home</a>
+              </li>
+              <li>
+                 <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                 <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                 <a href="team.html">Our Team</a>
+              </li>
+              <li>
+                 <a href="feedback.html">rate us</a>
+              </li>
+           </ul>
+           <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+        </nav>
+        <label for="nav_check" class="side-veiw">
+           <div></div>
+           <div></div>
+           <div></div>
+       </label>
+     </header>
+    <section>
+        <h1 class="heading">SITEMAP</h1>
+    </section>
+    <svg id="allgroup" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <g id="groupid1">
+            <rect x="625" y = "100" width="250" rx="20" ry="20" height="50"/>
+            <text font-size="25" x="750" y="135">SPLASH Screen</text> 
+        </g>
+        <g id="groupid2">
+            <line x1="750" y1="152"  x2="750" y2="196"></line>
+            <polyline points="740 186, 750 196, 760 186"></polyline>
+        </g>
+        <g id="groupid3">
+            <rect x="625" y = "200" width="250" rx="20" ry="20" height="50"/>
+            <text font-size="25" x="750" y="235">HOME</text> 
+        </g>
+        <g id="groupid4">
+            <line x1="750" y1="252"  x2="750" y2="265"></line>
+            <!-- Home main line left -->
+            <line x1="750" y1="265"  x2="250" y2="265"></line>
+            <!-- Top Feedback line -->
+            <line x1="750" y1="265"  x2="750" y2="296"></line>
+            <polyline points="740 286, 750 296, 760 286"></polyline>
+            <!-- Top Gallery line -->
+            <line x1="250" y1="265"  x2="250" y2="296"></line>
+            <polyline points="240 286, 250 296, 260 286"></polyline>
+            <!--Top Shop line -->
+            <line x1="500" y1="265"  x2="500" y2="296"></line>
+            <polyline points="490 286, 500 296, 510 286"></polyline>
+            <!-- Home main line left -->
+            <line x1="750" y1="265" x2="1250" y2="265"></line>
+            <!-- Top SiteMap line -->
+            <line x1="1000" y1="265"  x2="1000" y2="296"></line>
+            <polyline points="990 286, 1000 296, 1010 286"></polyline>
+            <!-- Top Team line -->
+            <line x1="1250" y1="265"  x2="1250" y2="296"></line>
+            <polyline points="1240 286, 1250 296, 1260 286"></polyline>
+        </g>
+        <g id="groupid5">
+            <rect x="650" y = "300" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="750" y="335">FeedBack</text> 
+        </g>
+        <g id="groupid6">
+            <rect x="400" y="300"  width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="500" y="335">Shop</text> 
+        </g>
+        <g id="groupid7">
+            <rect x="150" y="300"  width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="250" y="335">Gallery</text> 
+        </g>
+        <g id="groupid8">
+            <rect x="900" y="300"  width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="1000" y="335">SiteMap</text> 
+        </g>
+        <g id="groupid9">
+            <rect x="1150" y="300"  width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="1250" y="335">Team</text> 
+        </g>
+        <g id="groupid10">
+            <!-- Bottom Sitemap line -->
+            <line x1="1000" y1="352" x2="1000" y2="383"></line>
+            <polyline points="990 363, 1000 373, 1010 363"></polyline>
+            <!-- Bottom Sitemap line left -->
+            <line x1="1000" y1="383" x2="250" y2="383"></line>
+            <!-- Bottom Sitemap line Right -->
+            <line x1="1000" y1="383" x2="1125" y2="383"></line>
+            <!-- SiteMap + Feedback -->
+            <line x1="750" y1="383" x2="750" y2="352"></line>
+            <polyline points="740 362, 750 352, 760 362"></polyline>
+            <!-- SiteMap + Shop -->
+            <line x1="500" y1="383" x2="500" y2="352"></line>
+            <polyline points="490 362, 500 352, 510 362"></polyline>
+            <!-- SiteMap + Gallery -->
+            <line x1="250" y1="383" x2="250" y2="352"></line>
+            <polyline points="240 362, 250 352, 260 362"></polyline>
+            <!-- SiteMap + Team -->
+            <line x1="1125" y1="383" x2="1125" y2="325"></line>
+            <line x1="1125" y1="325" x2="1147" y2="325"></line>
+            <polyline points="1137 315, 1147 325, 1137 335 "></polyline>
+        </g>
+        <g id="groupid11">
+            <!--Team to Students line -->
+            <line x1="1250" y1="351" x2="1250" y2="800"></line>
+            <!--Team to Student1 line -->
+            <line x1="1250" y1="500" x2="1052" y2="500"></line>
+            <polyline points="1062 490, 1052 500, 1062 510 "></polyline>
+            <!--Team to Student2 line -->
+            <line x1="1250" y1="600" x2="1052" y2="600"></line>
+            <polyline points="1062 590, 1052 600, 1062 610 "></polyline>
+            <!--Team to Student3 line -->
+            <line x1="1250" y1="700" x2="1052" y2="700"></line>
+            <polyline points="1062 690, 1052 700, 1062 710 "></polyline>
+            <!--Team to Student4 line -->
+            <line x1="1250" y1="800" x2="1052" y2="800"></line>
+            <polyline points="1062 790, 1052 800, 1062 810 "></polyline>
+        </g>
+        <g id="groupid12">
+            <rect x="850" y = "475" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="950" y="507">Student 01</text> 
+        </g>
+        <g id="groupid13">
+            <rect x="850" y = "575" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="950" y="607">Student 02</text> 
+        </g>
+        <g id="groupid14">
+            <rect x="850" y = "675" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="950" y="707">Student 03</text> 
+        </g>
+        <g id="groupid15">
+            <rect x="850" y = "775" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="950" y="807">Student 04</text> 
+        </g>
+        <g id="groupid16">
+            <!--Student1 to Content -->
+            <line x1="849" y1="500" x2="752" y2="500"></line>
+            <polyline points="762 490, 752 500, 762 510 "></polyline>
+            <!--Student2 to Content -->
+            <line x1="849" y1="600" x2="752" y2="600"></line>
+            <polyline points="762 590, 752 600, 762 610 "></polyline>
+            <!--Student3 to Content -->
+            <line x1="849" y1="700" x2="752" y2="700"></line>
+            <polyline points="762 690, 752 700, 762 710 "></polyline>
+            <!--Student4 to Content -->
+            <line x1="849" y1="800" x2="752" y2="800"></line>
+            <polyline points="762 790, 752 800, 762 810 "></polyline>
+        </g>
+        <g id="groupid17">
+            <rect x="550" y = "475" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="650" y="507">Content Page</text> 
+        </g>
+        <g id="groupid18">
+            <rect x="550" y = "575" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="650" y="607">Content Page</text> 
+        </g>
+        <g id="groupid19">
+            <rect x="550" y = "675" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="650" y="707">Content Page</text> 
+        </g>
+        <g id="groupid20">
+            <rect x="550" y = "775" width="200" rx="15" ry="15" height="50"/>
+            <text font-size="25" x="650" y="807">Content Page</text> 
+        </g>
+    </svg>
 </body>
-
-<!--Javascripts-->
-<script src="scripts/main.js"></script>
 </html>

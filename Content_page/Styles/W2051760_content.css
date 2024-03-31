@@ -1,30 +1,85 @@
+*{scroll-behavior: smooth;}
+
 header {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow below the header */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); Adds a shadow below the header */
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 5%;
+   
   }
   
-  header #student{ font-size: 22px; 
+  #student h1{ font-size: 20px; 
     font-weight: 700; 
     line-height: 46px; 
     color: #171A1FFF;
-    position: absolute; 
-    top: 8px; 
-    left: 1400px; 
+   max-height: 6vh;
     font-family: Vollkorn;
     
-    
 }
-header img { 
-    position: absolute; 
-    top: 8px; 
-    left: 150px; 
-    height: 50px;
-    width: auto;
-   
-    
-    
+header div { 
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: auto;
 }
 
+#logo{
+  max-height: 9vh;
+}
+#title{
+  max-height: 6vh;
+}
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 650px;
+    padding: 0;
+    margin-top: 3px;
+    text-align: center;
+    background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+    position: sticky;
+    top: 3vh;
+    z-index: 1000;
+    border-radius: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+    
+  }
+  
+  nav ul li a {
+    font-family: Encode Sans; /* Body */
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 26px; 
+    color: #323842FF; /* neutral-700 */
+    text-decoration: none;
+    padding: 3px;
+    padding-bottom: 9px;
+  }
+  nav ul li a:hover{
+    border-bottom: #deffd2 3px solid;
+    
+
+  }
+  .active{
+    border-bottom: #318016 3px solid;
+  font-weight: 900;}
 #hero {
     display: grid; 
     grid-template-columns: 1fr 1fr; 

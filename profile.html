@@ -2,18 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <!--CSS Stylings-->
-    <link rel="stylesheet" href="styles/main.css">
+     <title>Profile</title>
+    <link rel="icon" href="Images/img.png" />
+<link rel="stylesheet" href="styles/template.css">
+<script src="Scripts/template.js"></script>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+   
+    <script src="Scripts/profile.js"></script>
 </head>
-
-
-
 <body>
-    <h1>Profile</h1>
-</body>
+    <header style="display: static;">
+        <nav>
+           <div class="logo">
+              <img src="/images/Logo.png" alt="Site-logo">
+           </div>
+           <ul>
+              <li>
+                 <a href="index.html" class="active">Home</a>
+              </li>
+              <li>
+                 <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                 <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                 <a href="team.html">Our Team</a>
+              </li>
+              <li>
+                 <a href="feedback.html">rate us</a>
+              </li>
+           </ul>
+           <button  type="button" onclick="window.location.href='profile.html'" class="info-btn">Sign up</button>
+        </nav>
+        <label for="nav_check" class="side-veiw">
+           <div></div>
+           <div></div>
+           <div></div>
+       </label>
+     </header>
+    
+    <div class="body-container" id="body-section">
+        <div class="left-container">
+            <div id="main">
+                <div id="progress">
+                    <div class="progress-bar progress-completed" id="progress-1"></div>
+                    <div class="progress-bar" id="progress-2"></div>
+                    <div class="progress-bar" id="progress-3"></div>
+                </div>
+                <h1 class="heading">Want to build a Profile?</h1>
+                <div id="sections">
+                    <div class="section-card " id="section-card-1">
+                        <i class='bx bx-user-circle'></i>
+                        <h2>Personal Details</h2>
+                       
+                    </div>
+                    <div class="section-card" id="section-card-2">
+                        <i class='bx bx-directions'></i>
+                        <h2>Volunteer Details</h2>
+                    </div>
+                    <div class="section-card" id="section-card-3">
+                        <i class='bx bxs-select-multiple'></i>
+                        <h2>Qualification Details</h2>
+                    </div>
+                </div>
+                <div id="button-row">
+                    <button class="btn" id="btn-1">Start</button>
+                   
+                    <button class="btn" id="btn-2">Go to Step 2</button>
+                    
+                    <button class="btn" id="btn-3">Go to Step 3</button>
+                    
+                    <button class="btn-sub" id="btn-4">Submit</button>
+                
+                    
+                </div>
+                
+                
+                <div id="overlay">
+                   
+                    <div class="popup">
 
-<!--Javascripts-->
-<script src="scripts/main.js"></script>
+                    </div>
+                    <i class='bx bx-x' id="close-popup"></i>
+                </div> 
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="dynamic-data">
+                <h1>-Your Profile Summery-</h1>   
+                
+        </div>
+    </div>
+</div>
+
+<div class="thankyou" id="thanks-section">
+    <h1>Thank you for submitting your details</h1>
+    <p>We will get back to you soon</p>
+    <img src="Images/profile/thanks.png">
+</div>
+
+
+
+</body>
 </html>
