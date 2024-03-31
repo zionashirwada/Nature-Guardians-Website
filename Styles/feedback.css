@@ -208,3 +208,52 @@ form .button input:hover{
     background: linear-gradient(-135deg, #01ac15,#03eb3d) ;
 
 }
+
+.message-data{
+    display: none;
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: linear-gradient(135deg, #00c832, #006c0d);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2); 
+}
+
+.message-data h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin: 30px 0 10px;
+    color: linear-gradient(135deg, #00c832, #006c0d);
+
+}
+
+.message-data p{
+    font-size:20px ;
+    font-weight: 400;
+}
+
+.message-data button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #00721e;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+.message-data button:hover{
+    background: linear-gradient(-135deg, #01ac15,#03eb3d) ;
+
+}
