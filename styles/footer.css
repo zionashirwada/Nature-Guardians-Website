@@ -20,15 +20,34 @@ footer {
   height: 210px;
   justify-content: space-between;
 }
-.links-foot p{
+
+.EdPage{
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 150px;
+  font-size: 32px;
+  position: absolute;
+  top: -27px;
+}
+.pages{
   font-family: "Encode Sans Semi Condensed", sans-serif;
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: medium;
+  position: relative;
+  top: 20px;
+  left: 88px;
+  height: 180px;
 }
 .footer-text{
   display: flex;
+  position: relative;
+  left: -150px;
+  top: 40px;
+  height: 130px;
 }
 .links-foot a{
   font-family: "Encode Sans Semi Condensed", sans-serif;
@@ -53,13 +72,13 @@ footer {
   box-shadow: none;
 }
 .foot-list{
-  margin-top: 10px;
+  width: 200px;
 }
 .li-itemss {
   position: relative;
   left: -7px;
   padding-bottom: -30px;
-  padding-right: 80px;
+  padding-right: 20px;
   font-size: small;
   margin: 0.5rem;
 }
@@ -69,13 +88,15 @@ footer {
   left: 20px;
 }
 
-
 .copyrights {
+  text-decoration: none;
+  cursor: pointer;
   color: white;
   font-family: inherit;
   font-size: small;
-  position: relative;
-  top: 13px;
+  position: absolute;
+  left: 48%;
+  bottom:13px;
   
   
 }
@@ -102,7 +123,7 @@ footer {
   margin-bottom: 5px;
 }
 .footer-text {
-  padding-top: 50px;
+  padding-top: 30px;
   width: 570px;
 }
 .li-itemss:hover{
@@ -149,4 +170,16 @@ footer {
 
 .links-foot {
   margin-bottom: 60px;
+  position: relative;
+  left:-100px;
+}
+
+.foot-down .foot-list{
+  position: relative;
+  top: -10px;
+}
+
+.foot-down p{
+  font-size: 15px;
+  font-weight: 600;
 }
