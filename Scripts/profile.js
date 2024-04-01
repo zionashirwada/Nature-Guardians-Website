@@ -252,16 +252,13 @@ function handleStep3SkipButtonClick() {
 
     // Function to handle submission when the submit button is clicked
     function handleSubmitButtonClick() {
-        if (step1Completed && step2Completed && step3Completed) {
+        
             // Handle final submission or redirection here
             const thanksSection = document.getElementById('thanks-section');
             const bodySection = document.getElementById('body-section');
             bodySection.style.display = 'none';
             thanksSection.style.display = 'flex';
-        } else
-        {
-            alert('Please complete all steps before submitting.');
-        }
+        
     }
 
     // Function to dynamically show/hide buttons based on the current step
