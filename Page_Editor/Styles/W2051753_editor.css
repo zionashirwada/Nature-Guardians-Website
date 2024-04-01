@@ -70,25 +70,25 @@
 
 @keyframes moveContainer {
     0% {
-      transform: translateY(0); /* Initial position */
+      transform: translateY(0); 
     }
     50% {
-      transform: translateY(-40px); /* Halfway through animation */
+      transform: translateY(-40px); 
     }
     100% {
-      transform: translateY(0); /* Final position */
+      transform: translateY(0); 
     }
   }
 #inside-container5 {
     position: absolute;
-    top: 0px; /* Adjust as needed */
+    top: 0px; 
     left: 170px;
     width: 400px;
     height: 222px;
-    background: rgb(233, 113, 0); /* tertiary3-200 */
-    border-radius: 100px  100px 0px; /* Adjusted border radius values */
-    background-image: url('Desktop\WhatsApp Image 2024-03-08 at 09.13.11_ce8fed0b.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-    background-size: cover; /* Adjust as needed */
+    background: rgb(233, 113, 0); 
+    border-radius: 100px  100px 0px; 
+    
+    background-size: cover; 
     background-position: center;
     opacity: 0.5;
     animation: moveContainer 5s infinite alternate;
