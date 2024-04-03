@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Editor</title>
     <!-- linking css and js -->
-    <link rel="stylesheet" type="text/css" href="/Styles/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="/Styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/template.css" />
     <link rel="icon" href="/Images/img.png" />
     <link rel="stylesheet" href="/Page_Editor/Styles/W2051756_editor.css" />
     <link
@@ -40,28 +39,23 @@
       console.log(mybutton);
     </script>
   </head>
-  <body>
-    <header>
-      <nav>
+  <body id="3">
+    <header >
+      <nav >
         <div class="logo">
           <img src="/images/Logo.png" alt="Site-logo" />
         </div>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="#3">Page Editor</a>
           </li>
           <li>
-            <a href="shop.html">Shop</a>
+            <a href="#1">About Me</a>
           </li>
           <li>
-            <a href="gallery.html">Gallery</a>
+            <a href="#2">Home Page</a>
           </li>
-          <li>
-            <a href="team.html">Our Team</a>
-          </li>
-          <li>
-            <a href="feedback.html">rate us</a>
-          </li>
+         
         </ul>
         <button
           type="button"
@@ -81,7 +75,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn">
       <i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </button>
-    <div class="editor">
+    <div class="editor" id="1">
       <h3>Page Editor</h3>
       <hr />
       <div class="self">
@@ -91,7 +85,7 @@
         </p>
       </div>
       <hr />
-      <div class="content">
+      <div class="content" id="2">
           <a href="#bottom">⬇jump to button</a>
         <h4>Home Page</h4>
         <p>
@@ -99,14 +93,14 @@
           for 'jump back to top' button functionality.<br />Created a
           interactive accordian UI
         </p>
-        <a href="/home.html">link to Home Page</a><br />
+        <a href="/home.html" >link to Home Page</a><br />
         <h4>Content Page</h4>
         <p>
           Created a content page with html,css and javascript<br />Created
           card's for recent global projects<br />
           and linked them with the official websites
         </p>
-        <a href="/Content_page/W2051756_content.html">link to Content Page</a
+        <a id="4" href="/Content_page/W2051756_content.html">link to Content Page</a
         ><br />
         <h4>Navbar</h4>
         <p>
@@ -114,7 +108,7 @@
           website<br />Created using HTML,CSS & javascript
         </p>
 
-        <h4>Footer</h4>
+        <h4 id="5">Footer</h4>
         <p>
           Created Footer which would be redirecting to other pages of the
           website and Sitemap<br />Created using HTML,CSS & javascript
